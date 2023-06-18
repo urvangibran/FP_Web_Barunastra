@@ -116,3 +116,89 @@
     background-size: 0 2px, 100% 2px;
   }
 }
+
+@font-face {
+  font-family: Gotham;
+  src: url('/fonts/gotham-font.woff2') format(woff2);
+}
+
+.gotham {
+  font-family: Gotham;
+}
+
+.border-profile {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+
+.border-profile:hover {
+  border: 1px solid #000000;
+}
+
+.border-profile h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #fff;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.border-profile h2:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.card-profile {
+  height: 379px;
+  width: 300px;
+  /* background: #808080; */
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card1-profile {
+  /* background: url("../../public/images/large-og.png") center center no-repeat; */
+  background-size: 300px;
+}
+
+.card1-profile:hover {
+  background: left center no-repeat;
+  background-size: 600px;
+}
+
+.card1-profile:hover h2 {
+  opacity: 1;
+}
+
+.card1-profile:hover .fa {
+  opacity: 1;
+}
+
+.icons-profile {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon-profile:hover {
+  color: #000000;
+  cursor: pointer;
+}

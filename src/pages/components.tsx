@@ -443,7 +443,7 @@ export default function ComponentsPage() {
                 </p>
                 <NextImage
                   useSkeleton
-                  className='w-32 md:w-40'
+                  className='w-32 md:w-56'
                   src='/favicon/android-chrome-192x192.png'
                   width='180'
                   height='180'

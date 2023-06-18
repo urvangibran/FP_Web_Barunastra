@@ -111,7 +111,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             <ImSpinner2 className='animate-spin' />
           </div>
         )}
-        {LeftIcon && (
+        {LeftIcon && (  
           <div
             className={clsxm([
               size === 'base' && 'mr-1',
