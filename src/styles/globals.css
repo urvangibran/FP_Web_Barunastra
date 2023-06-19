@@ -114,7 +114,7 @@
   .animated-underline:hover,
   .animated-underline:focus-visible {
     background-size: 0 2px, 100% 2px;
-  }
+  }  
 }
 
 @font-face {
@@ -125,6 +125,51 @@
 .gotham {
   font-family: Gotham;
 }
+
+.active {
+  background-color: #383838;
+  padding-top: 0.5rem/* 8px */;
+  padding-bottom: 0.5rem/* 8px */;
+  border-radius: 0.5rem/* 8px */
+}
+
+@keyframes fullSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  background: conic-gradient(#047fab 20deg, transparent 120deg);
+  width: 850px;
+  height: 850px;
+  top: -50%;
+  left: -10%;
+  animation: fullSpin 3s linear infinite;
+}
+
+.box::after {
+  content: 'tailwind';
+  color: white;
+  width: 94%;
+  height: 93%;
+  background: #020223;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
 
 .border-profile {
   height: 369px;

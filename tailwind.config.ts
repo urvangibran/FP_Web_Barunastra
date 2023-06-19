@@ -26,6 +26,14 @@ export default {
         dark: '#222222',
       },
       keyframes: {
+        fullSpin: {
+          "0%": {
+            transform: "rotate(0deg)"
+          },
+          "100%": {
+            transform: "rotate(-360deg)"
+          }
+        },
         flicker: {
           '0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100%': {
             opacity: '0.99',
@@ -47,6 +55,7 @@ export default {
         },
       },
       animation: {
+        fullSpin: "fullSpin 3s linear infinite",
         flicker: 'flicker 3s linear infinite',
         shimmer: 'shimmer 1.3s linear infinite',
       },
