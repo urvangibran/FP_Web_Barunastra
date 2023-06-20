@@ -14,7 +14,7 @@ const ButtonLinkVariant = [
   'light',
   'dark',
 ] as const;
-const ButtonLinkSize = ['sm', 'base'] as const;
+const ButtonLinkSize = ['sm', 'base', 'xl'] as const;
 
 type ButtonLinkProps = {
   isDarkBg?: boolean;
@@ -55,6 +55,7 @@ const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
           [
             size === 'base' && ['px-3 py-1.5', 'text-sm md:text-base'],
             size === 'sm' && ['px-2 py-1', 'text-xs md:text-sm'],
+            size === 'xl' && ['px-5 py-3', 'text-sm md:text-4xl'],
           ],
           //#endregion  //*======== Size ===========
           //#region  //*=========== Variants ===========

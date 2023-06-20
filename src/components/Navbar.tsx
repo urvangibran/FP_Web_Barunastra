@@ -14,7 +14,7 @@ export const Navbar = () => {
     { name: "Home", link: "Home", offset: -100 },
     { name: "About", link: "About", offset: -30 },
     { name: "Team", link: "Team", offset: -15 },
-    { name: "Achievment", link: "Achievment", offset: 0 },
+    { name: "Achievement", link: "Achievement", offset: 0 },
     { name: "Robots", link: "Robots", offset: 0 },
     { name: "Contact", link: "Contact", offset: 0 }
   ]
