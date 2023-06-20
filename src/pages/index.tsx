@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Link } from 'react-scroll'
 
+import { Achievement } from '@/components/Achievement';
 import { Cards } from '@/components/Cards';
-import { CardsAchievement } from '@/components/CardsAchievement';
 import Layout from '@/components/layout/Layout';
 import ButtonLink from '@/components/links/ButtonLink';
 import { Midline } from '@/components/Midline';
@@ -12,7 +12,6 @@ import { ProfileEPR } from '@/components/ProfileEPR';
 import { ProfileMEC } from '@/components/ProfileMEC';
 import { ProfileNTC } from '@/components/ProfileNTC';
 import Seo from '@/components/Seo';
-import { Achievement } from '@/components/Achievement';
 
 export default function HomePage() {
   return (
@@ -116,7 +115,7 @@ export default function HomePage() {
             <ProfileNTC />
           </section>
         </section>
-        <div className='relative'>
+        <div className='relative mb-[450px] '>
           <section id='Achievement' className='h-[200vh] flex justify-center'>
             <h1 className='text-[64px] text-center gotham absolute md:top-[120px] '>Our Achievement</h1>
             <Midline />
@@ -156,6 +155,16 @@ export default function HomePage() {
                 href='https://instagram.com/barunastra_its'
               > Show More</ButtonLink>
             </div>
+          </section>
+        </div>
+        <div className='relative'>
+          <section id='Contact' className='h-screen flex justify-center'>
+            <NextImage
+              className='cursor-pointer w-auto bottom-0 md:w-[1905px] md:h-[850px] absolute'
+              src="/images/footerPhotos.png"
+              width='1905'
+              height='850'
+              alt='Logo' />
           </section>
         </div>
 
