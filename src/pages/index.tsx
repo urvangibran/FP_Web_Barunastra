@@ -3,6 +3,7 @@ import { Link } from 'react-scroll'
 
 import { Achievement } from '@/components/Achievement';
 import { Cards } from '@/components/Cards';
+import { Footer } from '@/components/Footer';
 import Layout from '@/components/layout/Layout';
 import ButtonLink from '@/components/links/ButtonLink';
 import { Midline } from '@/components/Midline';
@@ -43,7 +44,7 @@ export default function HomePage() {
               <div className='bg-primary-500 md:w-[130px] rounded-md shadow-lg shadow-slate-500'>
                 <p className='gotham text-[35px] mt-5 font-bold p-2 py-4 box-border text-white '>About</p>
               </div>
-              <h3 className='gotham uppercase text-2xl font-bold text-[36px] my-5'>Barunastra ITS</h3>
+              <h3 className='gotham uppercase text-2xl font-bold text-[36px] my-14 md:my-5'>Barunastra ITS</h3>
               <p className='gotham font-bold text-[15px] first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3'>Team focuses on conducting research on Autonomous Surface Vehicle (ASV) since 2012. Established by ITS Robotics Students Union, Metic Club by Marine Engineering Department, and Hydro Modelling Club by Naval Architecture Department. We specialize in designing and producing ASV (Autonomous Surface Vehicle), FERC (Fuel Engine Remote Control) and RC (Remote Control) boats. Established by ITS Robotics, Metic Club from Marine Engineering, and Hydromodelling Club from Naval Architecture, Barunastra ITS has a strong commitment to help foster the world’s maritime technology advancement.</p>
               <ButtonLink
                 className='mt-4'
@@ -69,10 +70,10 @@ export default function HomePage() {
         </section>
         <section id='Team'>
           <section className='flex justify-center h-screen'>
-            <div className='layout absolute bottom-[-1200px] md:bottom-[-1330px] flex flex-col justify-center items-center'>
-              <h5 className='my-3 text-[44px] font-[1000] gotham uppercase'>Meet</h5>
+            <div className='layout absolute bottom-[-1240px] md:bottom-[-1330px] flex flex-col justify-center items-center'>
+              <h5 className='md:my-3 text-[44px] font-[1000] gotham uppercase'>Meet</h5>
               <h1 className='text-[64px] font-[1000] gotham leading-[70px] text-center uppercase'>The Crew</h1>
-              <p className='text-center mt-3 gotham w-[50%]'>Our specialist are out pride. <br /> Team gracefully orchestrates the symphony of code, navigating the digital waters with precision and innovation.</p>
+              <p className='text-center mt-3 gotham w-[50%]'>Meet the extraordinary individuals who have come together, not just as teammates but as a family.</p>
             </div>
             <div className='gap-10 absolute bottom-[-2200px] md:bottom-[-1730px] flex flex-col md:flex-row md:gap-[300px]'>
               <div className='w-[289px] h-[289px] flex justify-center items-center rounded-[27px]' style={{ background: "linear-gradient(180deg, #4570DD 0%, #6A61E1 100%)" }}>
@@ -115,9 +116,9 @@ export default function HomePage() {
             <ProfileNTC />
           </section>
         </section>
-        <div className='relative mb-[450px] '>
+        <div className='relative md:mb-[450px] md:top-0 top-[3800px] '>
           <section id='Achievement' className='h-[200vh] flex justify-center'>
-            <h1 className='text-[64px] text-center gotham absolute md:top-[120px] '>Our Achievement</h1>
+            <h1 className='text-[64px] text-center gotham absolute top- md:top-[120px] '>Our Achievement</h1>
             <Midline />
             <Achievement
               tahun={23}
@@ -137,7 +138,7 @@ export default function HomePage() {
               textAchievement='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus vel possimus consectetur distinctio nam. Tempora, illum sequi sit mollitia nisi sed est. Sed aut totam hic laudantium voluptatem tenetur quaerat.'
             />
             <Achievement
-              rightValue={180}
+              rightValue={172}
               tahun={21}
               topValue={1450}
               textDesc='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique harum labore natus dolores omnis iste quaerat optio tempore nemo. Exercitationem assumenda, ad earum consequatur et aliquid fuga. Adipisci deserunt molestiae suscipit, aperiam aspernatur rem accusantium quae eligendi a aliquid perspiciatis id tenetur fuga asperiores repudiandae vitae dicta repellat earum excepturi?'
@@ -153,6 +154,7 @@ export default function HomePage() {
                 size='xl'
                 variant='dark'
                 href='https://instagram.com/barunastra_its'
+                // href='/robot'
               > Show More</ButtonLink>
             </div>
           </section>
@@ -165,6 +167,9 @@ export default function HomePage() {
               width='1905'
               height='850'
               alt='Logo' />
+            <div className='absolute left-[108px] bottom-[-20px] '>
+              <Footer />
+            </div>
           </section>
         </div>
 

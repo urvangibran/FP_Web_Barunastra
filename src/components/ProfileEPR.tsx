@@ -44,7 +44,7 @@ const photoList = [
     subdiv: "Programming",
     ig: "urvangibran",
     departement: "Teknik Informatika",
-    urlPhoto: "./images/1.jpeg"
+    urlPhoto: "./images/team/gibran.png"
   },
   {
     id: 2,
