@@ -14,6 +14,8 @@ import { ProfileMEC } from '@/components/ProfileMEC';
 import { ProfileNTC } from '@/components/ProfileNTC';
 import { Reveal } from '@/components/Reveal';
 import Seo from '@/components/Seo';
+import { RevealX } from '@/components/RevealX';
+import { RevealXR } from '@/components/RevealXR';
 
 export default function HomePage() {
   return (
@@ -34,7 +36,7 @@ export default function HomePage() {
               <h1 className='text-[64px] mb-2 font-bold gotham leading-[70px] text-center uppercase'>Barunastra ITS</h1>
             </Reveal>
             <Reveal>
-              <p className='gotham ml-[277px] text-center w-[50%]'>Barunastra ITS Roboboat team is a research team from Sepuluh Nopember Institute of Technology ITS which focuses on developing unmaned vessels since 2012.</p>
+              <p className='gotham ml-[115px] md:ml-[277px] text-center w-[50%]'>Barunastra ITS Roboboat team is a research team from Sepuluh Nopember Institute of Technology ITS which focuses on developing unmaned vessels since 2012.</p>
             </Reveal>
           </div>
           <NextImage
@@ -49,17 +51,17 @@ export default function HomePage() {
           <div className='absolute bottom-[-580px] md:bottom-[-630px] w-[80%] flex flex-col-reverse md:flex-row md:justify-between'>
             <div className='md:w-[40%]'>
               <div className='bg-primary-500 md:w-[130px] rounded-md shadow-lg shadow-slate-500'>
-                <Reveal>
+                <RevealX>
                   <p className='gotham text-[35px] font-bold p-2 py-4 flex items-center box-border text-white '>About</p>
-                </Reveal>
+                </RevealX>
               </div>
-              <Reveal>
+              <RevealX>
                 <h3 className='gotham uppercase text-2xl font-bold text-[36px] my-14 md:my-5'>Barunastra ITS</h3>
-              </Reveal>
-              <Reveal>
+              </RevealX>
+              <RevealX>
                 <p className='gotham font-bold text-[15px] first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3'>Team focuses on conducting research on Autonomous Surface Vehicle (ASV) since 2012. Established by ITS Robotics Students Union, Metic Club by Marine Engineering Department, and Hydro Modelling Club by Naval Architecture Department. We specialize in designing and producing ASV (Autonomous Surface Vehicle), FERC (Fuel Engine Remote Control) and RC (Remote Control) boats. Established by ITS Robotics, Metic Club from Marine Engineering, and Hydromodelling Club from Naval Architecture, Barunastra ITS has a strong commitment to help foster the world’s maritime technology advancement.</p>
-              </Reveal>
-              <Reveal>
+              </RevealX>
+              <RevealX>
                 <ButtonLink
                   className='mt-4'
                   variant='primary'
@@ -67,10 +69,10 @@ export default function HomePage() {
                 >
                   Learn More
                 </ButtonLink>
-              </Reveal>
+              </RevealX>
             </div>
             <Cards />
-            <Reveal>
+            <RevealXR>
               <div className='absolute md:static top-[-100px]'>
                 <NextImage
                   className='cursor-pointer w-auto z-10 md:w-[695px] md:h-[391px]'
@@ -79,7 +81,7 @@ export default function HomePage() {
                   height='391'
                   alt='Logo' />
               </div>
-            </Reveal>
+            </RevealXR>
           </div>
         </section>
         <section className='absolute bottom-[-1030px]'>
@@ -89,13 +91,13 @@ export default function HomePage() {
           <section className='flex justify-center h-screen'>
             <div className='layout absolute bottom-[-1240px] md:bottom-[-1330px] flex flex-col justify-center items-center'>
               <Reveal>
-                <h5 className='md:my-3 text-[44px] font-[1000] gotham uppercase'>Meet</h5>
+                <h5 className='md:my-3 py-3 text-[44px] font-[1000] gotham uppercase'>Meet</h5>
               </Reveal>
               <Reveal>
                 <h1 className='text-[64px] font-[1000] gotham leading-[70px] text-center uppercase'>The Crew</h1>
               </Reveal>
               <Reveal>
-                <p className='text-center ml-[277px] mt-3 gotham w-[50%]'>Meet the extraordinary individuals who have come together, not just as teammates but as a family.</p>
+                <p className='text-center ml-[115px] md:ml-[277px] mt-3 gotham w-[50%]'>Meet the extraordinary individuals who have come together, not just as teammates but as a family.</p>
               </Reveal>
             </div>
             <div className='gap-10 absolute bottom-[-2200px] md:bottom-[-1730px] flex flex-col md:flex-row md:gap-[300px]'>
@@ -148,7 +150,7 @@ export default function HomePage() {
         <div className='md:visible relative md:mb-[450px] md:top-0 top-[3800px] '>
           <section id='Achievement' className='h-[200vh] flex justify-center'>
             <Reveal>
-              <h1 className='text-[64px] mt-24 text-center gotham top- md:top-[120px] '>Our Achievement</h1>
+              <h1 className='hidden md:block text-[64px] mt-24 text-center gotham top- md:top-[120px] small-caps'>Our Achievement</h1>
             </Reveal>
             <Midline />
             <Achievement
@@ -188,7 +190,7 @@ export default function HomePage() {
               textAchievement={<span style={{ whiteSpace: 'pre-line' }}>2nd Place & Best Design Award Kompetisi Kapal Cepat Tak Berawak Nasional (KKCTBN) 2019, Malang, Indonesia {'\n'}</span>}
               num={1}
             />
-            <div className='absolute bottom-[-325px] gotham'>
+            <div className='hidden md:block absolute bottom-[-325px] gotham'>
               <Reveal>
                 <ButtonLink
                   size='xl'
@@ -203,7 +205,7 @@ export default function HomePage() {
         <div className='relative'>
           <section id='Contact' className='h-screen flex justify-center'>
             <NextImage
-              className='md:visible cursor-pointer w-auto bottom-0 md:w-[1905px] md:h-[850px] absolute'
+              className='md:block hidden cursor-pointer w-auto bottom-0 md:w-[1905px] md:h-[850px] absolute'
               src="/images/footerPhotos.png"
               width='1905'
               height='850'
@@ -213,7 +215,7 @@ export default function HomePage() {
             </div>
             <div>
               <ButtonLink
-                className='bottom-[-2900px] left-[123px] absolute visible md:hidden
+                className='bottom-[-1100px] left-[123px] absolute visible md:hidden
                '
                 size='xl'
                 variant='dark'

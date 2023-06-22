@@ -15,8 +15,8 @@ export const Reveal = ({ children, width = "fit-content" }: Props) => {
 
   useEffect(() => {
     if (isInView) {
-      mainControls.start("visible")
       slideControls.start("visible")
+      mainControls.start("visible")
     }
   }, [isInView])
 
@@ -29,7 +29,7 @@ export const Reveal = ({ children, width = "fit-content" }: Props) => {
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.25 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
       >
         {children}
       </motion.div>
@@ -43,12 +43,12 @@ export const Reveal = ({ children, width = "fit-content" }: Props) => {
         transition={{ duration: 0.5, ease: "easeIn" }}
         style={{
           position: "absolute",
-          top: 4,
-          bottom: 4,
-          left: 0,
-          right: 0,
+          top: 3,
+          bottom: 3,
+          left: 1,
+          right: 2,
           background: "bg-blue-700",
-          zIndex: 20,
+          zIndex: 50,
         }}
       />
     </div>

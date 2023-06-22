@@ -13,7 +13,7 @@ export const ProfileEPR = () => {
           <h1 className='text-[58px] md:text-[64px] font-[1000] gotham leading-[70px] text-center uppercase'>The Programmer</h1>
         </Reveal>
         <Reveal>
-          <p className='text-center ml-[277px] mt-3 gotham w-[50%]'>Our specialist are out pride. <br /> Team gracefully orchestrates the symphony of code, navigating the digital waters with precision and innovation.</p>
+          <p className='text-center ml-[115px] md:ml-[277px] mt-3 gotham w-[50%]'>Our specialist are out pride. <br /> Team gracefully orchestrates the symphony of code, navigating the digital waters with precision and innovation.</p>
         </Reveal>
       </div>
       <div className='mt-[670px] md:mt-[300px]'>

@@ -12,7 +12,7 @@ export const Navbar = () => {
     { name: 'Home', to: 'Home', offset: -100 },
     { name: 'About', to: 'About', offset: -30 },
     { name: 'Team', to: 'Team', offset: -15 },
-    { name: 'Achievement', to: 'Achievement', offset: 0 },
+    { name: 'Achievement', to: 'Achievement', offset: -20 },
     { name: 'Robot', to: 'Robot', offset: 0, link: '/robot' },
     { name: 'Contact', to: 'Contact', offset: 10 },
   ];

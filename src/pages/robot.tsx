@@ -1,12 +1,33 @@
 import * as React from 'react';
-import Layout from '@/components/layout/Layout';
-import Seo from '@/components/Seo';
-import { Navbar } from '@/components/Navbar';
-import IconButton from '@/components/buttons/IconButton';
-import ArrowLink from '@/components/links/ArrowLink';
+import { Link } from 'react-scroll';
 
+import { Footer } from '@/components/Footer';
+import Layout from '@/components/layout/Layout';
+import ArrowLink from '@/components/links/ArrowLink';
+import { Navbar } from '@/components/Navbar';
+import NextImage from '@/components/NextImage';
+import { Reveal } from '@/components/Reveal';
+import { RevealX } from '@/components/RevealX';
+import Seo from '@/components/Seo';
 
 export default function RobotPage() {
+  const [imageLoaded, setImageLoaded] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleImageLoad = () => {
+      setImageLoaded(true);
+    };
+
+    const image = new Image();
+    image.onload = handleImageLoad;
+    image.src = '/images/robotKapal.jpeg';
+
+    return () => {
+      image.onload = null;
+    };
+  }, []);
+
+
   return (
     <Layout>
       <Seo
@@ -17,23 +38,210 @@ export default function RobotPage() {
       <main id='Robot'>
         <section id='Robot'>
           <Navbar />
-          <div className='top-[20px] right-[200px] active z-50 font-bold text-[20px] text-white gotham px-5 cursor-pointer hover:scale-95 fixed'>Robot</div>
+          <div className='top-[20px] right-[200px] active z-50 font-bold text-[20px] text-white gotham px-5 cursor-pointer hover:scale-95 fixed hidden md:block '>Robot</div>
           <div className='absolute top-[100px] left-5'>
             <ArrowLink
-              direction='left' 
-              className='mt-2 fixed' 
+              direction='left'
+              className='mt-2 fixed'
               href='/'
             >Back to main</ArrowLink>
+            <ArrowLink
+              direction='right'
+              className='mt-2 fixed right-5'
+              href='/robot'
+            >Back to top</ArrowLink >
           </div>
           <div className='layout flex flex-col justify-center items-center my-20'>
-            <h5 className='mt-10 mb-5 text-[20px] font-bold gotham uppercase'>Welcome to</h5>
-            <h1 className='text-[64px] mb-2 font-bold gotham leading-[70px] text-center uppercase'>Barunastra ITS</h1>
-            <p className='gotham text-center w-[50%]'>Barunastra ITS Roboboat team is a research team from Sepuluh Nopember Institute of Technology ITS which focuses on developing unmaned vessels since 2012.</p>
+            <Reveal>
+              <h5 className='mt-10 mb-5 text-[20px] font-bold gotham uppercase'>Welcome to</h5>
+            </Reveal>
+            <Reveal>
+              <h1 className='text-[64px] mb-2 font-bold gotham leading-[70px] text-center uppercase'>Barunastra ITS</h1>
+            </Reveal>
+            <Reveal>
+              <p className='gotham text-center ml-[110px] md:ml-[277px] w-[50%]'>Barunastra ITS Roboboat team is a research team from Sepuluh Nopember Institute of Technology ITS which focuses on developing unmaned vessels since 2012.</p>
+            </Reveal>
           </div>
         </section>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim tenetur unde tempora est quos distinctio esse eius placeat molestias odio totam ex, nisi non. Debitis, odio. Totam at adipisci suscipit quo quas autem vel laudantium deleniti nobis magni, numquam dolores quos dolore laborum rerum dicta neque ab? Fuga, eveniet omnis voluptas est modi quis tempore beatae. Commodi veniam aliquid unde distinctio aspernatur fugit sit voluptatem, mollitia libero vero velit totam enim, quisquam quibusdam explicabo, tempora itaque eum cum consequatur fugiat error iusto qui labore accusantium? Quasi, sunt amet ut ipsa repudiandae ipsum pariatur repellat inventore, vel eveniet optio magni esse. Sapiente adipisci est minima atque quae dolorem cumque sunt itaque quas tenetur officiis, illo harum, vero totam quasi alias iste facilis? Quos recusandae repellendus est illum repellat accusantium officia debitis natus neque eveniet? Ipsam ipsum consequatur tenetur rerum id iste nobis vero qui quos optio iusto magni, expedita odio doloremque culpa natus, quam, nemo ipsa temporibus suscipit molestias architecto aliquam. Sunt incidunt commodi ab libero neque repellat exercitationem repudiandae labore, voluptatem quas, impedit nulla tempora esse, minus ipsam dolore necessitatibus consequuntur quae nobis fugiat odit? Quis voluptas expedita earum velit, suscipit incidunt dolores cupiditate sequi eos consequuntur adipisci, error ducimus. Laudantium ad quo cumque aliquid deserunt, perspiciatis amet autem quas, dolores sunt excepturi! Consectetur sint ea ratione laborum iusto distinctio rem incidunt deleniti commodi fugiat temporibus, illo aut ullam fuga impedit mollitia officiis at expedita nemo id ab a nesciunt. Tempore, maxime enim? Incidunt quas qui repellat libero recusandae labore nemo vero tenetur doloribus, dolore reprehenderit soluta fugit officiis laudantium nobis voluptatem sint minus sapiente eligendi perspiciatis error quos officia! Cumque esse unde aliquid! Blanditiis doloribus consequatur nihil nulla eveniet ut porro aut iusto dolores atque. Consequuntur placeat dolor, quas veniam asperiores accusamus odio quidem impedit voluptatum debitis temporibus facilis ad voluptates pariatur. Fugit enim necessitatibus quae nam inventore exercitationem in officia provident optio, totam vero porro est! Inventore perferendis esse fugiat vitae tempore reprehenderit odit eligendi placeat laboriosam veniam quis numquam maxime aliquam modi porro ullam, voluptatem aperiam. Velit adipisci error odit itaque quos sequi nemo assumenda, aperiam, laborum rerum aliquid placeat? Maiores, natus. Quae animi iste id aut similique alias ut, sequi soluta unde pariatur maxime explicabo voluptatibus quas? Nobis recusandae pariatur adipisci doloribus! Exercitationem quae alias nesciunt perspiciatis voluptates culpa, fugit eius harum dicta dolores quisquam optio. Illo earum similique aliquam iste magnam aspernatur velit quos accusantium ex tempore, laudantium quisquam alias. Dolores vitae aspernatur laudantium ipsum deserunt eos expedita. Eligendi ad omnis architecto at numquam eius debitis atque perferendis, quod deserunt! A corrupti quasi accusamus commodi sequi quo minus optio, molestiae aliquid, fugiat consectetur odio ratione. Doloremque, id accusantium expedita quisquam corporis suscipit fuga architecto sint veniam vitae nihil dolorem minus nemo, et numquam temporibus aliquam aspernatur laboriosam sit eligendi maiores. Repellendus, ea in. Tenetur eos excepturi at voluptate officia, dignissimos nulla, ab aperiam sapiente quam odit est minima velit! Dicta nulla nemo quasi quibusdam placeat exercitationem quis voluptate omnis modi sequi impedit illo dolor natus ad, sed voluptatum nobis eligendi beatae eum fugit nam nesciunt neque ducimus? Odit numquam culpa error labore voluptatum excepturi cumque, neque ducimus odio explicabo voluptate aperiam sint officiis! Aliquid ut velit sit expedita numquam excepturi, eveniet corporis aperiam quae architecto dignissimos, voluptates ea repellat facere? Obcaecati consequuntur minus reprehenderit fugiat eaque quibusdam totam aspernatur, alias, aliquid sed incidunt dicta. Aliquid, quas facere tempora in dolores nobis magni ex labore amet fuga, repellat enim, eum velit similique deserunt ut quis quia maiores omnis. Harum enim ex amet laudantium doloremque incidunt quod, mollitia ullam officia nemo, numquam autem dolorum consequuntur dignissimos velit, nulla voluptates alias voluptatum quasi deleniti ipsam eum? Porro neque fugiat enim molestias blanditiis, dolorem repudiandae ut dignissimos laboriosam, maxime cupiditate error nostrum a sed commodi. Odit error reprehenderit repellat! Vero, illum necessitatibus tempore incidunt sapiente eius debitis quas nemo excepturi vel culpa, pariatur repellendus officiis exercitationem, quae laudantium blanditiis cumque cupiditate reprehenderit modi dolore quo? Optio facilis unde praesentium cum laborum aspernatur velit doloribus. A blanditiis illo quisquam exercitationem dolore aut veritatis, dolorum maiores quibusdam, deleniti facere tempora quam suscipit doloribus similique dolor laboriosam repudiandae aliquid ipsum. Maiores recusandae reiciendis quidem architecto explicabo non tempore iste deserunt consequatur hic dolor vitae officia velit nobis, aliquid aperiam quae cum odit, nihil accusantium repellat. Consequuntur, rem amet? Laborum explicabo odit ullam laudantium perspiciatis maxime illum adipisci dolores eaque nobis veniam sint reprehenderit mollitia eligendi quisquam quas similique, iure sapiente suscipit, fugit facere neque! Quae totam modi mollitia nobis placeat deserunt? Quasi impedit asperiores, molestiae explicabo similique expedita reprehenderit aperiam aut maxime nesciunt alias dicta corporis, praesentium dolor iure magni animi voluptatibus accusamus quis sit! Doloribus laudantium quaerat maxime, ab fugiat repellendus voluptate beatae facilis placeat excepturi asperiores quibusdam officiis. Explicabo ipsa nostrum quam, fugit quae placeat quo magnam obcaecati corporis asperiores quaerat debitis ducimus nemo molestiae repudiandae ab, repellat amet itaque fugiat. Numquam delectus porro ducimus illum eaque, non doloremque qui distinctio iusto maiores illo aliquid nulla culpa. Voluptatum, numquam. Maxime excepturi quos labore aliquid explicabo eum error pariatur nesciunt reprehenderit ratione. Dignissimos eius consequatur voluptates provident saepe pariatur, nulla amet aperiam odio accusantium esse quam repellat, omnis laboriosam distinctio magnam, dolor placeat recusandae sunt at quis aut eaque a explicabo. Nulla, porro quas accusamus sunt ex minima, laudantium ut quae, doloribus quam unde. Ab, cum. Officia commodi inventore aliquam dolorem maxime dicta repudiandae debitis, ullam perspiciatis necessitatibus molestiae tempora, ratione ipsa exercitationem. Libero, minus enim? Ipsa dolorem placeat aliquid vero, excepturi dignissimos fugiat qui. Explicabo quam quos obcaecati ab iusto repudiandae ut, nobis accusamus vitae aperiam, porro aspernatur inventore facilis voluptatibus consequatur aut cum? Accusantium unde, odit sunt a voluptatum dolore, ab illum consectetur, deserunt sequi molestias adipisci architecto molestiae libero error. Voluptatem quisquam labore ex error odit assumenda dolorem saepe, nisi nobis molestias nam sint eum illum ad? Consequuntur cupiditate iusto laudantium quasi possimus ut aspernatur ullam sunt reiciendis eum deserunt, earum esse dignissimos nostrum cum harum dolorem aperiam, impedit laboriosam recusandae unde neque porro? Ad, ea earum. Quas.</p>
+        <section className='layout bg-[#eaeaea] h-screen flex flex-col justify-center items-center '>
+          <div className='grid md:grid-cols-2 gap-10 h-[50%]'>
+            <div className='p-20 gotham'>
+              <RevealX>
+                <h1 className='small-caps gotham text-[60px] mt-[283px] md:mt-0 mb-3 py-2 text-[#2E3FA2] '>Pasupastra</h1>
+              </RevealX>
+              <RevealX>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non maxime, ea eveniet illo laboriosam sed ratione incidunt assumenda iste vero doloribus dignissimos qui veritatis repellat, repellendus accusantium adipisci molestiae quisquam, est ipsam eaque et aspernatur? Quos eligendi rem labore ipsum ipsa temporibus commodi nemo, molestias odit. Omnis corrupti non rem.</p>
+              </RevealX>
+              <RevealX>
+                <Link
+                  to="Anatomy"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  className='font-bold text-[15px] text-white gotham'
+                >
+                  <div className='bg-[#2E3FA2] hover:bg-[#373737] active:scale-[.98] md:w-[370px] cursor-pointer mt-4 py-3 rounded-3xl px-3 '>
+                    Anatomy
+                  </div>
+                </Link>
+              </RevealX>
+              <RevealX>
+                <Link
+                  to="RobotInfo"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  className='font-bold text-[15px] text-white gotham '
+                >
+                  <div className='bg-[#2E3FA2] hover:bg-[#373737] px-3 active:scale-[.98] md:w-[370px] cursor-pointer w-full mt-3 py-3 rounded-3xl '>
+                    Robot Information
+                  </div>
+                </Link>
+              </RevealX>
+            </div>
+            <div className=''>
+              <div
+                className={`relative ${imageLoaded ? 'fade-in' : ''}`}
+                style={{ opacity: imageLoaded ? 1 : 0 }}
+              >
+                <NextImage
+                  className='md:visible w-[400px] left-[33px] md:left-[-10px] top-[-820px] md:top-[90px] md:bottom-[-640px] md:w-[562px] md:h-[560px] absolute'
+                  src="/images/robotKapal.jpeg"
+                  width={502}
+                  height={560}
+                  alt='Logo'
+                  style={{ borderRadius: '4%' }}
+                />
+              </div>
+            </div>
+          </div>
+          <div id='Anatomy' className='h-screen mt-20 flex flex-col items-center'>
+            <Reveal>
+              <h1 className='text-center gotham my-1 mb-10 mt-[230px] md:mt-0 text-[60px] text-[#2E3FA2] small-caps'>Anatomy</h1>
+            </Reveal>
+            <div className='absolute bottom-[-700px] md:bottom-[-650px] left-[700px]'>
+              <div
+                className={`relative left-[-657px] md:left-0 ${imageLoaded ? 'fade-in' : ''}`}
+                style={{ opacity: imageLoaded ? 1 : 0 }}
+              >
+                <Reveal>
+                <NextImage
+                  className='md:visible w-[400px] md:w-[562px] md:h-[560px]'
+                  src="/images/robotKapal1.jpeg"
+                  width={502}
+                  height={560}
+                  alt='Logo'
+                  style={{ borderRadius: '4%' }}
+                />
+                </Reveal>
+              </div>
+            </div>
+            {/* <CardSpesification /> */}
+          </div>
+        </section>
+        <section className='layout bg-[#eaeaea] h-[130vh] md:h-[140vh] flex flex-col items-center '>
+          <RevealX>
+            <div className='layout w-[960px] h-[120vh] mt-[0px] flex flex-col justify-center items-center '>
+              <div className='w-[40%] md:w-[80%] h-[100vh] '>
+                <div id='RobotInfo' className='flex justify-center '>
+                  <Reveal>
+                    <h1 className='text-center mt-[130px] md:mt-0 my-1 gotham text-[60px] py-2 text-[#2E3FA2] small-caps leading-[50px] '>Robot Information</h1>
+                  </Reveal>
+                </div>
+                <hr
+                  className='mt-10 bg-[#0E0C3D]'
+                  style={{
+                    height: '40px',
+                  }}
+                />
+                <div className='grid relative h-screen auto-cols-fr gothamv text-[17 px] ' style={{ gridTemplateColumns: "1fr 2fr 2fr" }}>
+                  <div className='py-2 ml-1'>
+                    <h5>CPU</h5>
+                  </div>
+                  <div className='py-2'>
+                    <p className='mb-4'>Main Controller</p>
+                    <p>Sub Controller</p>
+                  </div>
+                  <div className='py-2'>
+                    <p className='mb-4'>Intel NUC i7 Gen 12 Fullset</p>
+                    <p>STM32f4</p>
+                    <div className='absolute w-[100%] bg-black h-[2px] mt-[20px] left-0'></div>
+                  </div>
+                  <div className='py-2 ml-1'>
+                    <h5>Actuator</h5>
+                  </div>
+                  <div className='py-2'>
+                    <p className='mb-4'>Control</p>
+                  </div>
+                  <div className='py-2'>
+                    <p className='mb-4'>Servo Savox SB-2290SG</p>
+                    <div className='absolute w-[100%] bg-black h-[2px] mt-[20px] left-0'></div>
+                  </div>
+                  <div className='py-2 ml-1'>
+                    <h5>Power</h5>
+                  </div>
+                  <div className='py-2'>
+                    <p className='mb-4'>Lithium Pollymer Battery</p>
+                  </div>
+                  <div className='py-2'>
+                    <p className='mb-4'>Battery Baterai LIPO ONBO 4S</p>
+                    <div className='absolute w-[100%] bg-black h-[2px] mt-[20px] left-0'></div>
+                  </div>
+                  <div className='py-2 ml-1'>
+                    <h5>Sensors</h5>
+                  </div>
+                  <div className='py-2'>
+                    <p className='mb-4'>Camera</p>
+                    <p className='mb-4'>Ultrasonik</p>
+                    <p className='mb-4'>IMU</p>
+                    <p className='mb-4'>GPS</p>
+                  </div>
+                  <div className='py-2'>
+                    <p className='mb-4'>Logitech Webcam C930e HD C930e PRO</p>
+                    <p className='mb-4'>Sensor Ultrasonic 100</p>
+                    <p className='mb-4'>Pixhawk Cube Orange+ Standard Set (IMU V8)</p>
+                    <p className='mb-4'>ZED-F9P-02B</p>
+                    <div className='absolute w-[100%] bg-black h-[2px] mt-[20px] left-0'></div>
+                  </div>
+                  <div className='py-2 ml-1'>
+                    <h5>Communication</h5>
+                  </div>
+                  <div className='py-2'>
+                    <p className='mb-4'>Ship</p>
+                    <p className='mb-4'>Ground</p>
+                  </div>
+                  <div className='py-2'>
+                    <p className='mb-4'>Mikrotik GrooveA</p>
+                    <p className='mb-4'>Ubiquiti AMO 5G13 AirMax Omni 5Ghz 13dBi</p>
+                    <div className='absolute w-[100%] bg-black h-[2px] mt-[20px] left-0'></div>
+                  </div>
+                  <div className='py-2 ml-1'>
+                    <h5>Dimension</h5>
+                  </div>
+                  <div className='py-2'>
+                    <p className='mb-4'>Robot Height</p>
+                    <p className='mb-4'>Robot Weight</p>
+                  </div>
+                  <div className='py-2'>
+                    <p className='mb-4'>53cm</p>
+                    <p className='mb-4'></p>
+                    <div className='absolute w-[100%] bg-black h-[2px] mt-[55px] left-0'></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </RevealX>
+
+        </section>
+        <section>
+          <div className='absolute hidden md:block left-[108px] bottom-[-3200px] md:bottom-[-1920px] md:visible'>
+            <Footer />
+          </div>
+        </section>
       </main>
-    </Layout>
+    </Layout >
 
   );
 }

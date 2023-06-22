@@ -3,10 +3,12 @@ import React from 'react';
 
 import NextImage from '@/components/NextImage';
 import { Reveal } from '@/components/Reveal';
+import { RevealXR } from '@/components/RevealXR';
+import { RevealX } from '@/components/RevealX';
 
 export const Footer: React.FC = () => {
   return (
-    <div>
+    <div className='hidden md:block'>
       <svg style={{ position: 'fixed', top: '100vh' }}>
         <defs>
           <filter id="blob">
@@ -175,13 +177,10 @@ export const Footer: React.FC = () => {
                     <p className='font-bold text-white'>Contact</p>
                   </Reveal>
                 </div>
-                <div className='mt-2 max-w-xs text-sm font-normal text-white'>
-                  <Reveal>
-                    <p>Mobile: +62 895-8052-63010</p>
-                  </Reveal>
-                  <Reveal>
-                    <p>Email: barunastra.its@gmail.com</p>
-                  </Reveal>
+                <div className='mt-2 max-w-xs text-sm font-normal text-white flex flex-col items-end'>
+                  <RevealX  >
+                    <p>Mobile: +62 895-8052-63010 <br /> Email: barunastra.its@gmail.com</p>
+                  </RevealX>
                 </div>
               </div>
               <div className='flex flex-col items-end'>
@@ -194,12 +193,12 @@ export const Footer: React.FC = () => {
                   </Reveal>
                 </div>
                 <div className='mt-2 max-w-xs text-sm font-normal text-white'>
-                  <Reveal>
+                  <RevealXR>
                     <p>
                       Sekretariat Robotika ITS, Pusat Robotika ITS Jl. Teknik
                       Kimia, Kampus ITS Sukolilo Surabaya, 60111
                     </p>
-                  </Reveal>
+                  </RevealXR>
                 </div>
               </div>
             </div>
