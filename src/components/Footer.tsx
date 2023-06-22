@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 
 import NextImage from '@/components/NextImage';
+import { Reveal } from '@/components/Reveal';
 
 export const Footer: React.FC = () => {
   return (
@@ -162,35 +163,54 @@ export const Footer: React.FC = () => {
               alt='Logo ITS' />
           </div>
 
-          <div><a className="image md:w-[93rem] w-[10rem] left-[30px] " href="https://its.ac.id" target="_blank" style={{ "backgroundImage": "url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/happy.svg&quot;)" }}></a>
-            <div className='flex flex-row gap-4 absolute right-[-100px] top-[-18px] gotham text-end'>
+          <div>
+            <a className="image md:w-[93rem] w-[10rem] left-[30px] animated" href="https://its.ac.id" target="_blank" style={{ "backgroundImage": "url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/happy.svg&quot;)" }}></a>
+            <div className='flex flex-row gap-4 absolute right-[-100px] top-[-18px] gotham text-end animated'>
               <div className='flex flex-col items-end'>
                 <div className='flex flex-row gap-2 text-2xl'>
-                  <p className='font-bold text-red-700 '>Our</p>
-                  <p className='font-bold text-white'>Contact</p>
+                  <Reveal>
+                    <p className='font-bold text-red-700 '>Our</p>
+                  </Reveal>
+                  <Reveal>
+                    <p className='font-bold text-white'>Contact</p>
+                  </Reveal>
                 </div>
                 <div className='mt-2 max-w-xs text-sm font-normal text-white'>
-                  <p>Mobile: +62 895-8052-63010</p>
-                  <p>Email: barunastra.its@gmail.com</p>
+                  <Reveal>
+                    <p>Mobile: +62 895-8052-63010</p>
+                  </Reveal>
+                  <Reveal>
+                    <p>Email: barunastra.its@gmail.com</p>
+                  </Reveal>
                 </div>
               </div>
               <div className='flex flex-col items-end'>
                 <div className='flex flex-row gap-2 text-2xl text-end'>
-                  <p className='font-bold text-red-700 '>Our</p>
-                  <p className='font-bold text-white'>Addres</p>
+                  <Reveal>
+                    <p className='font-bold text-red-700 '>Our</p>
+                  </Reveal>
+                  <Reveal>
+                    <p className='font-bold text-white'>Address</p>
+                  </Reveal>
                 </div>
                 <div className='mt-2 max-w-xs text-sm font-normal text-white'>
-                  <p>
-                    Sekretariat Robotika ITS, Pusat Robotika ITS Jl. Teknik
-                    Kimia, Kampus ITS Sukolilo Surabaya, 60111
-                  </p>
+                  <Reveal>
+                    <p>
+                      Sekretariat Robotika ITS, Pusat Robotika ITS Jl. Teknik
+                      Kimia, Kampus ITS Sukolilo Surabaya, 60111
+                    </p>
+                  </Reveal>
                 </div>
               </div>
             </div>
-            <p className='text-white italic gotham absolute text-lg left-[340px] top-[0px] gotham '>
-              "Jalesveva Jayamahe, Gusti Pangeran Mboten Sare, <span className='text-red-700 font-bold'>Abang</span> Putih Semangatku!"
-            </p>
-            <div className='flex gap-4 text-base font-normal text-white absolute left-[430px] top-[44px] gotham'>
+            <div>
+              {/* <Reveal> */}
+                <p className='text-white absolute italic gotham mb-[30px] text-lg left-[340px] top-[0px] gotham animated'>
+                  "Jalesveva Jayamahe, Gusti Pangeran Mboten Sare, <span className='text-red-700 font-bold'>Abang</span> Putih Semangatku!"
+                </p>
+              {/* </Reveal> */}
+            </div>
+            <div className='flex gap-4 text-base font-normal text-white absolute left-[430px] top-[44px] gotham animated'>
               <div className='flex flex-row gap-2 '>
                 <div>
                   <a target='_blank' href="https://twitter.com/BarunastraITS">
@@ -202,7 +222,9 @@ export const Footer: React.FC = () => {
                     />
                   </a>
                 </div>
-                <p className='-mt-1'>@BarunastraITS</p>
+                <Reveal>
+                  <p className='-mt-1'>@BarunastraITS</p>
+                </Reveal>
               </div>
               <div className='flex flex-row gap-2 '>
                 <div>
@@ -210,7 +232,9 @@ export const Footer: React.FC = () => {
                     <Image src='/images/fb.png' alt='fb' width={20} height={60} />
                   </a>
                 </div>
-                <p className='-mt-1'>Barunastra ITS</p>
+                <Reveal>
+                  <p className='-mt-1'>Barunastra ITS</p>
+                </Reveal>
               </div>
               <div className='flex flex-row gap-2 '>
                 <div>
@@ -218,11 +242,15 @@ export const Footer: React.FC = () => {
                     <Image src='/images/ig.png' alt='ig' width={20} height={60} />
                   </a>
                 </div>
-                <p className='-mt-1'>@barunastra_its</p>
+                <Reveal>
+                  <p className='-mt-1'>@barunastra_its</p>
+                </Reveal>
               </div>
             </div>
-            <div className='absolute left-[530px] bottom-12 mt-14 text-center text-sm font-normal text-white'>
-              <p>© {new Date().getFullYear()} By Barunastra ITS Roboboat Team</p>
+            <div className='absolute left-[530px] bottom-12 mt-14 text-center text-sm font-normal text-white animated'>
+              <Reveal>
+                <p>© {new Date().getFullYear()} By Barunastra ITS Roboboat Team</p>
+              </Reveal>
             </div>
           </div>
         </div>
