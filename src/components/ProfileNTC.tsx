@@ -1,6 +1,7 @@
-import { Reveal } from '@/components/Reveal';
 import * as React from 'react';
 import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai'
+
+import { Reveal } from '@/components/Reveal';
 
 export const ProfileNTC = () => {
   return (
