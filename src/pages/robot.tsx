@@ -34,12 +34,11 @@ export default function RobotPage() {
         templateTitle='Detail Boat Kelompok 4'
         description='Pre-built components with awesome default'
       />
-
       <main id='Robot'>
         <section id='Robot'>
           <Navbar />
           <div className='top-[20px] right-[200px] active z-50 font-bold text-[20px] text-white gotham px-5 cursor-pointer hover:scale-95 fixed hidden md:block '>Robot</div>
-          <div className='absolute top-[100px] left-5'>
+          <div className='absolute top-[100px] left-5 z-50'>
             <ArrowLink
               direction='left'
               className='mt-2 fixed'
@@ -59,7 +58,7 @@ export default function RobotPage() {
               <h1 className='text-[64px] mb-2 font-bold gotham leading-[70px] text-center uppercase'>Barunastra ITS</h1>
             </Reveal>
             <Reveal>
-              <p className='gotham text-center ml-[110px] md:ml-[277px] w-[50%]'>Barunastra ITS Roboboat team is a research team from Sepuluh Nopember Institute of Technology ITS which focuses on developing unmaned vessels since 2012.</p>
+              <p className='gotham text-center ml-[116px] md:ml-[277px] w-[50%]'>Barunastra ITS Roboboat team is a research team from Sepuluh Nopember Institute of Technology ITS which focuses on developing unmaned vessels since 2012.</p>
             </Reveal>
           </div>
         </section>
@@ -107,7 +106,7 @@ export default function RobotPage() {
                 style={{ opacity: imageLoaded ? 1 : 0 }}
               >
                 <NextImage
-                  className='md:visible w-[400px] left-[33px] md:left-[-10px] top-[-820px] md:top-[90px] md:bottom-[-640px] md:w-[562px] md:h-[560px] absolute'
+                  className='md:visible w-[400px] left-[55px] md:left-[-10px] top-[-820px] md:top-[90px] md:bottom-[-640px] md:w-[562px] md:h-[560px] absolute'
                   src="/images/robotKapal.jpeg"
                   width={502}
                   height={560}
@@ -123,7 +122,7 @@ export default function RobotPage() {
             </Reveal>
             <div className='absolute bottom-[-700px] md:bottom-[-650px] left-[700px]'>
               <div
-                className={`relative left-[-657px] md:left-0 ${imageLoaded ? 'fade-in' : ''}`}
+                className={`relative left-[-640px] md:left-0 ${imageLoaded ? 'fade-in' : ''}`}
                 style={{ opacity: imageLoaded ? 1 : 0 }}
               >
                 <Reveal>
@@ -156,7 +155,7 @@ export default function RobotPage() {
                     height: '40px',
                   }}
                 />
-                <div className='grid relative h-screen auto-cols-fr gothamv text-[17 px] ' style={{ gridTemplateColumns: "1fr 2fr 2fr" }}>
+                <div className='grid relative h-[800px] md:h-screen auto-cols-fr gotham text-[17 px] ' style={{ gridTemplateColumns: "1fr 2fr 2fr" }}>
                   <div className='py-2 ml-1'>
                     <h5>CPU</h5>
                   </div>
@@ -226,7 +225,7 @@ export default function RobotPage() {
                   </div>
                   <div className='py-2'>
                     <p className='mb-4'>53cm</p>
-                    <p className='mb-4'></p>
+                    <p className='mb-4'>18kg</p>
                     <div className='absolute w-[100%] bg-black h-[2px] mt-[55px] left-0'></div>
                   </div>
                 </div>

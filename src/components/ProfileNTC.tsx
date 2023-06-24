@@ -16,7 +16,7 @@ export const ProfileNTC = () => {
           <p className='text-center ml-[18px] mt-3 gotham'>Our specialist are out pride. <br /> These people create stunning design and come up with crazy ideas.</p>
         </Reveal>
       </div>
-      <div className='mt-[2620px] md:mt-[330px]'>
+      <div className='mt-[3640px] md:mt-[330px]'>
         <Reveal>
           <div className='flex flex-col md:flex-row justify-center align-middle mt-8'>
             {photoList.map((photo) => (

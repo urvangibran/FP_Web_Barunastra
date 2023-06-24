@@ -13,9 +13,9 @@ import { ProfileEPR } from '@/components/ProfileEPR';
 import { ProfileMEC } from '@/components/ProfileMEC';
 import { ProfileNTC } from '@/components/ProfileNTC';
 import { Reveal } from '@/components/Reveal';
-import Seo from '@/components/Seo';
 import { RevealX } from '@/components/RevealX';
 import { RevealXR } from '@/components/RevealXR';
+import Seo from '@/components/Seo';
 
 export default function HomePage() {
   return (
@@ -48,7 +48,7 @@ export default function HomePage() {
           />
         </section>
         <section className='flex justify-center h-screen' id='About'>
-          <div className='absolute bottom-[-580px] md:bottom-[-630px] w-[80%] flex flex-col-reverse md:flex-row md:justify-between'>
+          <div className='absolute bottom-[-690px] md:bottom-[-630px] w-[80%] flex flex-col-reverse md:flex-row md:justify-between'>
             <div className='md:w-[40%]'>
               <div className='bg-primary-500 md:w-[130px] rounded-md shadow-lg shadow-slate-500'>
                 <RevealX>
@@ -85,7 +85,7 @@ export default function HomePage() {
           </div>
         </section>
         <section className='absolute bottom-[-1030px]'>
-          <div className='w-[479px] md:w-[1900px] h-[270px] bg-red bg-[url(/images/parallax.jpg)] bg-cover object-cover bg-fixed drop-shadow-[0 35px 35px rgba(0, 0, 0, 0.25)] drop-shadow-xl shadow-slate-800'></div>
+          <div className='w-[518px] md:w-[1900px] h-[270px] bg-red bg-[url(/images/parallax.jpg)] bg-cover object-cover bg-fixed drop-shadow-[0 35px 35px rgba(0, 0, 0, 0.25)] drop-shadow-xl shadow-slate-800'></div>
         </section>
         <section id='Team'>
           <section className='flex justify-center h-screen'>
@@ -205,9 +205,9 @@ export default function HomePage() {
         <div className='relative'>
           <section id='Contact' className='h-screen flex justify-center'>
             <NextImage
-              className='md:block hidden cursor-pointer w-auto bottom-0 md:w-[1905px] md:h-[850px] absolute'
+              className='md:block hidden cursor-pointer w-auto bottom-0 md:w-[1920px] md:h-[860px] absolute'
               src="/images/footerPhotos.png"
-              width='1905'
+              width='1925'
               height='850'
               alt='Logo' />
             <div className='absolute left-[108px] bottom-[-3200px] md:bottom-[-20px] md:visible'>
@@ -215,7 +215,7 @@ export default function HomePage() {
             </div>
             <div>
               <ButtonLink
-                className='bottom-[-1100px] left-[123px] absolute visible md:hidden
+                className='bottom-[-3100px] left-[138px] absolute visible md:hidden
                '
                 size='xl'
                 variant='dark'

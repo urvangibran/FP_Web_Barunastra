@@ -16,7 +16,7 @@ export const ProfileEPR = () => {
           <p className='text-center ml-[115px] md:ml-[277px] mt-3 gotham w-[50%]'>Our specialist are out pride. <br /> Team gracefully orchestrates the symphony of code, navigating the digital waters with precision and innovation.</p>
         </Reveal>
       </div>
-      <div className='mt-[670px] md:mt-[300px]'>
+      <div className='mt-[1170px] md:mt-[300px]'>
         <Reveal>
           <div className='flex md:flex-row flex-col justify-center align-middle mt-8'>
             {photoList.map((photo) => (

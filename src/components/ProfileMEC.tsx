@@ -17,7 +17,7 @@ export const ProfileMEC = () => {
           </p>
         </Reveal>
       </div>
-      <div className='mt-[1600px] md:mt-[320px]'>
+      <div className='mt-[2370px] md:mt-[320px]'>
         <Reveal>
           <div className='flex flex-col md:flex-row  justify-center align-middle mt-8 '> {/* w-full h-[460px] bg-gray-800 rounded-xl */}
             {photoList.map((photo) => (
