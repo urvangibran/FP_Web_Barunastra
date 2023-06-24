@@ -6,7 +6,7 @@ import NextImage from '@/components/NextImage';
 
 export const Navbar = () => {
   const [isOpen, setOpen] = React.useState(false);
-  const [click, setClick] = React.useState(false);
+  const [click] = React.useState(false);
 
   const Links = [
     { name: 'Home', to: 'Home', offset: -100 },
