@@ -10,7 +10,7 @@ import { ProfileNTC } from '@/components/ProfileNTC'
 
 function Team() {
   return (
-    <section className='' id='Team'>
+    <section id='Team'>
       <section className='flex flex-col justify-start items-center h-full md:h-screen'>
         <div className='layout flex flex-col justify-center items-center mt-24 mb-14 md:mb-32'>
           <Reveal>
@@ -88,7 +88,7 @@ function Team() {
           </Reveal>
         </div>
       </section>
-      <section id='Team' className='h-full md:h-screen flex flex-col items-center justify-start  '>
+      <section id='Team' className='h-full md:h-screen flex flex-col items-center justify-start '>
         <ProfileEPR />
       </section>
       <section className='h-full md:h-screen flex flex-col items-center justify-start'>

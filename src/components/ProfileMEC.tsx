@@ -14,7 +14,7 @@ export const ProfileMEC = () => {
           <h1 className='text-[64px] font-[1000] gotham leading-[70px] text-center uppercase'>The Mechanics</h1>
         </Reveal>
         <Reveal>
-          <p className='text-center ml-[115px] md:ml-[277px] mt-3 gotham w-[50%]'>Our specialist are out pride. <br /> Responsible for inspecting, maintaining, and repairing boats and their engines to ensure they are running safely and efficiently.
+          <p className='text-center mt-3 gotham w-[550px]'>Our specialist are out pride. <br /> Responsible for inspecting, maintaining, and repairing boats and their engines to ensure they are running safely and efficiently.
           </p>
         </Reveal>
       </div>

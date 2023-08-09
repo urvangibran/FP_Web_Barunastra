@@ -261,9 +261,9 @@
 }
 .footer .bubbles .bubble {
   position: absolute;
-  left: var(--position, 50%);
+  left: var(--position, 50%); 
   background: var(--footer-background);
-  border-radius: 100%;
+  border-radius: 50%;
   -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
           animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
   transform: translate(-50%, 100%);
@@ -272,8 +272,6 @@
   z-index: 2;
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-gap: 4rem;
-  padding: 2rem;
   background: var(--footer-background);
 }
 .footer .content > div {

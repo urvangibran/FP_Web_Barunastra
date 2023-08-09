@@ -20,7 +20,7 @@ import LandingPage from '@/components/LandingPage';
 import About from '@/components/About';
 import Team from '@/components/Team';
 import AchievementPage from '@/components/AchievementPage';
-import LastPage from '@/components/LastPage';
+import Contact from '@/components/Contact';
 
 export default function HomePage() {
   return (
@@ -36,9 +36,20 @@ export default function HomePage() {
         <section className=''>
           <div className='w-screen h-[300px] bg-[url(/images/parallax.jpg)] bg-cover object-cover bg-fixed drop-shadow-[0 35px 35px rgba(0, 0, 0, 0.25)] drop-shadow-xl shadow-slate-800'></div>
         </section>
-        <Team />  
-        <AchievementPage />
-        <LastPage />
+        <Team />
+        <div className='hidden md:block'>
+          <AchievementPage />
+          <Contact />
+        </div>
+        <div className='flex justify-center my-10 md:hidden'>
+          <ButtonLink
+            className=''
+            size='xl'
+            variant='dark'
+            href='https://instagram.com/barunastra_its'
+          // href='/robot'
+          > Know More About Barunastra!</ButtonLink>
+        </div>
       </main>
 
     </Layout>

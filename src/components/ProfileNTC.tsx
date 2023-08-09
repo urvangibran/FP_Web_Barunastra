@@ -14,12 +14,12 @@ export const ProfileNTC = () => {
           <h1 className='text-[64px] font-[1000] gotham leading-[70px] text-center uppercase'>Non-Techinal</h1>
         </Reveal>
         <Reveal>
-          <p className='text-center ml-[18px] mt-3 gotham'>Our specialist are out pride. <br /> These people create stunning design and come up with crazy ideas.</p>
+          <p className='text-center w-[550px] mt-3 gotham'>Our specialist are out pride. <br /> These people create stunning design and come up with crazy ideas.</p>
         </Reveal>
       </div>
       <div>
         <Reveal>
-          <div className='flex flex-col md:flex-row justify-center align-middle mt-8'>
+          <div className='flex flex-col md:flex-row justify-center align-middle mt-16'>
             {photoList.map((photo) => (
               <div key={photo.id} className="">
                 <div className="card-profile card1-profile bg-no-repeat bg-center mx-10" style={{ backgroundImage: `url(${photo.urlPhoto})` }}>

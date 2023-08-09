@@ -6,7 +6,7 @@ import React from 'react'
 
 function AchievementPage() {
   return (
-    <div className='md:visible relative'>
+    <div className='md:visible relative mt-10'>
       <section id='Achievement' className='h-full flex flex-col items-center'>
         <Reveal>
           <div className='h-[50px] '>
