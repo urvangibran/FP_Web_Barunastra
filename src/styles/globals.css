@@ -183,34 +183,6 @@
   font-weight: bold;
 }
 
-.box-1::before {
-  content: '';
-  position: absolute;
-  background: conic-gradient(#047fab 20deg, transparent 120deg);
-  width: 850px;
-  height: 850px;
-  top: -50%;
-  left: -10%;
-  animation: fullSpin 4s linear infinite;
-}
-
-.box-1::after {
-  content: '';
-  color: white;
-  width: 94%;
-  height: 93%;
-  background: #020223;
-  position: absolute;
-  top: 3%;
-  left: 3%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: bold;
-}
-
 .box-2::before {
   content: '';
   position: absolute;

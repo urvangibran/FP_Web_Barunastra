@@ -19,13 +19,14 @@ type Text = {
 
 export const Achievement = (props: Text) => {
   const { topValue, num, tahun, rightValue = 173, urlPhoto, textDesc, textAchievement } = props;
+  const numSecond = [300, 650, 1050, 1450, 1800, 173, 180]
 
   return (
     <div id='Achievement' className={`md:block hidden absolute top-[${topValue}px] `}>
       <CardsAchievement num={num} />
       <div className='absolute md:static top-[-100px]'>
         {/* <Reveal> */}
-          <p className={`gotham text-white absolute text-6xl right-[${rightValue || 173}px] top-[-86px] `}> {tahun} </p>
+        <p className={`gotham text-white absolute text-6xl right-[${rightValue || 173}px] top-[-86px] `}> {tahun} </p>
         {/* </Reveal> */}
         <Reveal>
           <NextImage

@@ -1,9 +1,21 @@
+import NextImage from '@/components/NextImage';
+import { RevealXR } from '@/components/RevealXR';
 import * as React from 'react';
 
 export const Cards = () => {
   return (
-    <div className=" hidden md:flex md:justify-center md:items-center md:h-screen md:absolute md:right-[-19px] md:top-[-271px] md:z-[-1]">
-      <div className="box-1 md:relative md:w-[730px] md:h-[421px] md:bg-[#020223] md:overflow-hidden md:rounded-3xl"></div>
+    <div className="flex justify-center items-center mb-2">
+      <div className="max-w-full">
+        <RevealXR>
+          <NextImage
+            className='w-full h-auto border-[20px] rounded-lg border-[#242424] '
+            src="/images/kapalAbout.jpg"
+            width='695'
+            height='391'
+            alt='Logo'
+          />
+        </RevealXR>
+      </div>
     </div>
   );
 };

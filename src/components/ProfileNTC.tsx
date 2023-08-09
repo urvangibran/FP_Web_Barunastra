@@ -6,7 +6,7 @@ import { Reveal } from '@/components/Reveal';
 export const ProfileNTC = () => {
   return (
     <>
-      <div id='NTC' className='layout absolute bottom-[-6400px] md:bottom-[-4120px] flex flex-col justify-center items-center'>
+      <div id='NTC' className='layout mt-24 flex flex-col justify-center items-center'>
         <Reveal>
           <h5 className='my-3 text-[44px] font-[1000] gotham uppercase'>Meet</h5>
         </Reveal>
@@ -17,7 +17,7 @@ export const ProfileNTC = () => {
           <p className='text-center ml-[18px] mt-3 gotham'>Our specialist are out pride. <br /> These people create stunning design and come up with crazy ideas.</p>
         </Reveal>
       </div>
-      <div className='mt-[3640px] md:mt-[330px]'>
+      <div>
         <Reveal>
           <div className='flex flex-col md:flex-row justify-center align-middle mt-8'>
             {photoList.map((photo) => (

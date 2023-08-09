@@ -3,10 +3,37 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai
 
 import { Reveal } from '@/components/Reveal';
 
+const photoList = [
+  {
+    id: 1,
+    name: "Gibran",
+    subdiv: "Programming",
+    ig: "urvangibran",
+    departement: "Teknik Informatika",
+    urlPhoto: "./images/team/gibran.png"
+  },
+  {
+    id: 2,
+    name: "Zuhri",
+    subdiv: "Programming",
+    ig: "yorebare",
+    departement: "Teknik Elektro",
+    urlPhoto: './images/team/zuhri.png'
+  },
+  {
+    id: 3,
+    name: "Iyan",
+    subdiv: "Electrical",
+    ig: "brli.nd",
+    departement: "Teknik Elektro",
+    urlPhoto: './images/team/berlian.png'
+  },
+];
+
 export const ProfileEPR = () => {
   return (
     <>
-      <div id='EPR' className='layout absolute bottom-[-2600px] md:bottom-[-2230px] flex flex-col justify-center items-center'>
+      <div id='EPR' className='layout mt-24 flex flex-col justify-center items-center'>
         <Reveal>
           <h5 className='my-3 text-[44px] font-[1000] gotham uppercase'>Meet</h5>
         </Reveal>
@@ -17,7 +44,7 @@ export const ProfileEPR = () => {
           <p className='text-center ml-[115px] md:ml-[277px] mt-3 gotham w-[50%]'>Our specialist are out pride. <br /> Team gracefully orchestrates the symphony of code, navigating the digital waters with precision and innovation.</p>
         </Reveal>
       </div>
-      <div className='mt-[1170px] md:mt-[300px]'>
+      <div>
         <Reveal>
           <div className='flex md:flex-row flex-col justify-center align-middle mt-8'>
             {photoList.map((photo) => (
@@ -48,29 +75,3 @@ export const ProfileEPR = () => {
   )
 }
 
-const photoList = [
-  {
-    id: 1,
-    name: "Gibran",
-    subdiv: "Programming",
-    ig: "urvangibran",
-    departement: "Teknik Informatika",
-    urlPhoto: "./images/team/gibran.png"
-  },
-  {
-    id: 2,
-    name: "Zuhri",
-    subdiv: "Programming",
-    ig: "yorebare",
-    departement: "Teknik Elektro",
-    urlPhoto: './images/team/zuhri.png'
-  },
-  {
-    id: 3,
-    name: "Iyan",
-    subdiv: "Electrical",
-    ig: "brli.nd",
-    departement: "Teknik Elektro",
-    urlPhoto: './images/team/berlian.png'
-  },
-];

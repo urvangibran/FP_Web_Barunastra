@@ -6,7 +6,7 @@ import { Reveal } from '@/components/Reveal';
 export const ProfileMEC = () => {
   return (
     <>
-      <div id='MEC' className='layout absolute bottom-[-4500px] md:bottom-[-3230px] flex flex-col justify-center items-center '>
+      <div id='MEC' className='layout mt-24 flex flex-col justify-center items-center '>
         <Reveal>
           <h5 className='my-3 text-[44px] font-[1000] gotham uppercase'>Meet</h5>
         </Reveal>
@@ -18,7 +18,7 @@ export const ProfileMEC = () => {
           </p>
         </Reveal>
       </div>
-      <div className='mt-[2370px] md:mt-[320px]'>
+      <div>
         <Reveal>
           <div className='flex flex-col md:flex-row  justify-center align-middle mt-8 '> {/* w-full h-[460px] bg-gray-800 rounded-xl */}
             {photoList.map((photo) => (
