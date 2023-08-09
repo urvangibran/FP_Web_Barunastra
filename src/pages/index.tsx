@@ -20,6 +20,7 @@ import LandingPage from '@/components/LandingPage';
 import About from '@/components/About';
 import Team from '@/components/Team';
 import AchievementPage from '@/components/AchievementPage';
+import LastPage from '@/components/LastPage';
 
 export default function HomePage() {
   return (
@@ -37,7 +38,7 @@ export default function HomePage() {
         </section>
         <Team />  
         <AchievementPage />
-
+        <LastPage />
       </main>
 
     </Layout>

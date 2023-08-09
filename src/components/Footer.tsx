@@ -1,30 +1,12 @@
-import Image from 'next/image';
 import React from 'react';
 
 import NextImage from '@/components/NextImage';
-import { Reveal } from '@/components/Reveal';
-import { RevealX } from '@/components/RevealX';
-import { RevealXR } from '@/components/RevealXR';
 
 export const Footer: React.FC = () => {
   return (
-    <div className='hidden md:block'>
-      <svg style={{ position: 'fixed', top: '100vh' }}>
-        <defs>
-          <filter id="blob">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-            <feColorMatrix
-              in="blur"
-              mode="matrix"
-              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-              result="blob"
-            />
-            {/* <feComposite in="SourceGraphic" in2="blob" operator="atop" /> */}
-          </filter>
-        </defs>
-      </svg>
+    <div>
 
-      <div className="footer md:h-[10rem]">
+      <div className="footer relative md:h-[10rem]">
         <div className="bubbles">
           <div className="bubble" style={{ "--size": "3.2412319835186203rem", "--distance": "6.881818062029767rem", "--position": "3.9089003580167514%", "--time": "2.229147241919517s", "--delay": "-2.916639444167297s" } as React.CSSProperties as React.CSSProperties}></div>
           <div className="bubble" style={{ "--size": "3.990771814076443rem", "--distance": "9.09142580608978rem", "--position": "-2.8312406077151397%", "--time": "3.2733005007542357s", "--delay": "-2.533594343560646s" } as React.CSSProperties}></div>
@@ -156,105 +138,122 @@ export const Footer: React.FC = () => {
           <div className="bubble" style={{ "--size": "4.390947862087191rem", "--distance": "6.190201563681275rem", "--position": "69.3528823997794%", "--time": "2.6129376732959346s", "--delay": "-3.147687779367443s" } as React.CSSProperties}></div>
         </div >
         <div className="content">
-          <div className='top-[15px] absolute'>
-            <NextImage
-              className='cursor-pointer md:w-[240px] md:h-[60px] absolute'
-              src="/images/logoits.png"
-              width='240'
-              height='60'
-              alt='Logo ITS' />
-          </div>
 
-          <div>
-            <a className="image md:w-[93rem] w-[10rem] left-[30px] animated" href="https://its.ac.id" target="_blank" style={{ "backgroundImage": "url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/happy.svg&quot;)" }}></a>
-            <div className='flex flex-row gap-4 absolute right-[-100px] top-[-18px] gotham text-end animated'>
-              <div className='flex flex-col items-end'>
-                <div className='flex flex-row gap-2 text-2xl'>
-                  <Reveal>
-                    <p className='font-bold text-red-700 '>Our</p>
-                  </Reveal>
-                  <Reveal>
-                    <p className='font-bold text-white'>Contact</p>
-                  </Reveal>
+
+          <div className='w-screen h-[150px] relative'>
+            <div className='grid grid-cols-[1fr,2fr,1fr,1fr]'>
+              <a className="image animated" href="https://its.ac.id" target="_blank" style={{ "backgroundImage": "url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/happy.svg&quot;)" }}>
+                <div className='top-0 left-[100px] absolute'>
+                  <NextImage
+                    className='cursor-pointer md:w-[240px] md:h-[60px]'
+                    src="/images/logoits.png"
+                    width='240'
+                    height='60'
+                    alt='Logo ITS' />
                 </div>
-                <div className='mt-2 max-w-xs text-sm font-normal text-white flex flex-col items-end'>
-                  <RevealX  >
-                    <p>Mobile: +62 895-8052-63010 <br /> Email: barunastra.its@gmail.com</p>
-                  </RevealX>
-                </div>
+              </a>
+              <div className='bg-blue-200'>
+                <h1>asdka</h1>
               </div>
-              <div className='flex flex-col items-end'>
-                <div className='flex flex-row gap-2 text-2xl text-end'>
-                  <Reveal>
-                    <p className='font-bold text-red-700 '>Our</p>
-                  </Reveal>
-                  <Reveal>
-                    <p className='font-bold text-white'>Address</p>
-                  </Reveal>
-                </div>
-                <div className='mt-2 max-w-xs text-sm font-normal text-white'>
-                  <RevealXR>
-                    <p>
-                      Sekretariat Robotika ITS, Pusat Robotika ITS Jl. Teknik
-                      Kimia, Kampus ITS Sukolilo Surabaya, 60111
-                    </p>
-                  </RevealXR>
-                </div>
+              <div className='bg-blue-200'>
+                <h1>asdka</h1>
               </div>
-            </div>
-            <div>
-              {/* <Reveal> */}
-              <p className='text-white absolute italic gotham mb-[30px] text-lg left-[340px] top-[0px] gotham animated'>
-                "Jalesveva Jayamahe, Gusti Pangeran Mboten Sare, <span className='text-red-700 font-bold'>Abang</span> Putih Semangatku!"
-              </p>
-              {/* </Reveal> */}
-            </div>
-            <div className='flex gap-4 text-base font-normal text-white absolute left-[430px] top-[44px] gotham animated'>
-              <div className='flex flex-row gap-2 '>
-                <div>
-                  <a target='_blank' href="https://twitter.com/BarunastraITS">
-                    <Image
-                      src='/images/twitter.png'
-                      alt='twitter'
-                      width={20}
-                      height={60}
-                    />
-                  </a>
-                </div>
-                <Reveal>
-                  <p className='-mt-1'>@BarunastraITS</p>
-                </Reveal>
+              <div className='bg-purple-200'>
+                <h1>asdka</h1>
               </div>
-              <div className='flex flex-row gap-2 '>
-                <div>
-                  <a target='_blank' href="https://facebook.com/Barunastra-ITS">
-                    <Image src='/images/fb.png' alt='fb' width={20} height={60} />
-                  </a>
-                </div>
-                <Reveal>
-                  <p className='-mt-1'>Barunastra ITS</p>
-                </Reveal>
-              </div>
-              <div className='flex flex-row gap-2 '>
-                <div>
-                  <a target='_blank' href="https://instagram.com/barunastra_its">
-                    <Image src='/images/ig.png' alt='ig' width={20} height={60} />
-                  </a>
-                </div>
-                <Reveal>
-                  <p className='-mt-1'>@barunastra_its</p>
-                </Reveal>
-              </div>
-            </div>
-            <div className='absolute left-[530px] bottom-12 mt-14 text-center text-sm font-normal text-white animated'>
-              <Reveal>
-                <p>© {new Date().getFullYear()} By Barunastra ITS Roboboat Team</p>
-              </Reveal>
             </div>
           </div>
         </div>
-        <div className='left-[-110px] bottom-0 absolute bg-[#282828] w-[494px] h-[192px] md:w-[1922px] md:h-[192px]'></div>
+        {/* <div className='-left-[100px] bottom-0 absolute bg-[#282828] md:w-[1922px] md:h-[192px]'></div> */}
       </div >
     </div >
   );
 }
+
+// <div className='flex flex-row gap-4  gotham text-end animated'>
+//               <div>
+//                 <div className='bg-blue-200 w-[100px] z-10 '>
+//                   {/* <Reveal> */}
+//                   <p className='text-white absolute italic gotham mb-[30px] text-lg left-[340px] top-[0px] gotham animated'>
+//                     "Jalesveva Jayamahe, Gusti Pangeran Mboten Sare, <span className='text-red-700 font-bold'>Abang</span> Putih Semangatku!"
+//                   </p>
+//                   {/* </Reveal> */}
+//                 </div>
+//                 <div className='flex gap-4 text-base font-normal text-white absolute left-[430px] top-[44px] gotham animated'>
+//                   <div className='flex flex-row gap-2 '>
+//                     <div>
+//                       <a target='_blank' href="https://twitter.com/BarunastraITS">
+//                         <Image
+//                           src='/images/twitter.png'
+//                           alt='twitter'
+//                           width={20}
+//                           height={60}
+//                         />
+//                       </a>
+//                     </div>
+//                     <Reveal>
+//                       <p className='-mt-1'>@BarunastraITS</p>
+//                     </Reveal>
+//                   </div>
+//                   <div className='flex flex-row gap-2 '>
+//                     <div>
+//                       <a target='_blank' href="https://facebook.com/Barunastra-ITS">
+//                         <Image src='/images/fb.png' alt='fb' width={20} height={60} />
+//                       </a>
+//                     </div>
+//                     <Reveal>
+//                       <p className='-mt-1'>Barunastra ITS</p>
+//                     </Reveal>
+//                   </div>
+//                   <div className='flex flex-row gap-2 '>
+//                     <div>
+//                       <a target='_blank' href="https://instagram.com/barunastra_its">
+//                         <Image src='/images/ig.png' alt='ig' width={20} height={60} />
+//                       </a>
+//                     </div>
+//                     <Reveal>
+//                       <p className='-mt-1'>@barunastra_its</p>
+//                     </Reveal>
+//                   </div>
+//                 </div>
+
+//                 <div className='absolute left-[530px] bottom-12 mt-14 text-center text-sm font-normal text-white animated'>
+//                   <Reveal>
+//                     <p>© {new Date().getFullYear()} By Barunastra ITS Roboboat Team</p>
+//                   </Reveal>
+//                 </div>
+//               </div>
+//               <div className='flex flex-col items-end'>
+//                 <div className='flex flex-row gap-2 text-2xl '>
+//                   <Reveal>
+//                     <p className='font-bold text-red-700 '>Our</p>
+//                   </Reveal>
+//                   <Reveal>
+//                     <p className='font-bold text-white'>Contact</p>
+//                   </Reveal>
+//                 </div>
+//                 <div className='mt-2 max-w-xs text-sm font-normal text-white flex flex-col items-end'>
+//                   <RevealX  >
+//                     <p>Mobile: +62 895-8052-63010 <br /> Email: barunastra.its@gmail.com</p>
+//                   </RevealX>
+//                 </div>
+//               </div>
+//               <div className='flex flex-col items-end '>
+//                 <div className='flex flex-row gap-2 text-2xl text-end'>
+//                   <Reveal>
+//                     <p className='font-bold text-red-700 '>Our</p>
+//                   </Reveal>
+//                   <Reveal>
+//                     <p className='font-bold text-white'>Address</p>
+//                   </Reveal>
+//                 </div>
+//                 <div className='mt-2 max-w-xs text-sm font-normal text-white'>
+//                   <RevealXR>
+//                     <p>
+//                       Sekretariat Robotika ITS, Pusat Robotika ITS Jl. Teknik
+//                       Kimia, Kampus ITS Sukolilo Surabaya, 60111
+//                     </p>
+//                   </RevealXR>
+//                 </div>
+//               </div>
+//             </div>

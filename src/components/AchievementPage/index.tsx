@@ -35,7 +35,7 @@ function AchievementPage() {
             urlPhoto='juara.jpg'
           />
         </div>
-        <div className='gotham mt-5'>
+        <div className='gotham my-5'>
           <Reveal>
             <ButtonLink
               size='xl'
