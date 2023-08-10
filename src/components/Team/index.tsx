@@ -1,17 +1,17 @@
+import { Tooltip } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-scroll'
 
 import NextImage from '@/components/NextImage'
-import { Reveal } from '@/components/Reveal'
-import { Tooltip } from '@chakra-ui/react'
-import { ProfileEPR } from '@/components/ProfileEPR'
-import { ProfileMEC } from '@/components/ProfileMEC'
-import { ProfileNTC } from '@/components/ProfileNTC'
+import { ProfileEPR } from '@/components/Profile/ProfileEPR'
+import { ProfileMEC } from '@/components/Profile/ProfileMEC'
+import { ProfileNTC } from '@/components/Profile/ProfileNTC'
+import { Reveal } from '@/components/Reveal/Reveal'
 
 function Team() {
   return (
     <section id='Team'>
-      <section className='flex flex-col justify-start items-center h-full md:h-screen'>
+      <section className='flex flex-col justify-start items-center h-full'>
         <div className='layout flex flex-col justify-center items-center mt-24 mb-14 md:mb-32'>
           <Reveal>
             <h5 className='md:my-3 py-3 text-[44px] font-[1000] gotham uppercase'>Meet</h5>
@@ -23,7 +23,7 @@ function Team() {
             <p className='text-center mt-3 gotham w-[300px] md:w-[550px]'>Meet the extraordinary individuals who have come together, not just as teammates but as a family.</p>
           </Reveal>
         </div>
-        <div className='gap-10 flex flex-col md:flex-row md:gap-[300px]'>
+        <div className='gap-10 flex flex-col md:flex-row'>
           <Reveal>
             <Tooltip
               className='px-4 py-2 rounded-lg gotham font-semibold'
@@ -88,13 +88,13 @@ function Team() {
           </Reveal>
         </div>
       </section>
-      <section id='Team' className='h-full md:h-screen flex flex-col items-center justify-start '>
+      <section id='Team' className='h-full flex flex-col items-center justify-start '>
         <ProfileEPR />
       </section>
-      <section className='h-full md:h-screen flex flex-col items-center justify-start'>
+      <section className='h-full flex flex-col items-center justify-start'>
         <ProfileMEC />
       </section>
-      <section id='Team' className='h-full md:h-screen flex flex-col items-center justify-start'>
+      <section id='Team' className='h-full flex flex-col items-center justify-start'>
         <ProfileNTC />
       </section>
     </section>

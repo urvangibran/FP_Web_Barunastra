@@ -1,15 +1,15 @@
-import * as React from 'react';
-import { Link } from 'react-scroll';
+import React from "react";
+import { Link } from "react-scroll";
 
-import { Footer } from '@/components/Footer';
-import Layout from '@/components/layout/Layout';
-import ArrowLink from '@/components/links/ArrowLink';
-import { Navbar } from '@/components/Navbar';
-import NextImage from '@/components/NextImage';
-import { Reveal } from '@/components/Reveal';
-import { RevealX } from '@/components/RevealX';
-import Seo from '@/components/Seo';
-import { CardSpesification } from '@/components/CardsSpesification';
+import { CardSpesification } from "@/components/Cards/CardsSpesification";
+import { Footer } from "@/components/Footer";
+import Layout from "@/components/layout/Layout";
+import ArrowLink from "@/components/links/ArrowLink";
+import { Navbar } from "@/components/Navbar/Navbar";
+import NextImage from "@/components/NextImage";
+import { Reveal } from "@/components/Reveal/Reveal";
+import { RevealX } from "@/components/Reveal/RevealX";
+import Seo from "@/components/Seo";
 
 export default function RobotPage() {
   const [imageLoaded, setImageLoaded] = React.useState(false);
@@ -21,7 +21,7 @@ export default function RobotPage() {
 
     const image = new Image();
     image.onload = handleImageLoad;
-    image.src = '/images/robotKapal.jpeg';
+    image.src = '/images/boat/robotKapal.jpeg';
 
     return () => {
       image.onload = null;
@@ -108,7 +108,7 @@ export default function RobotPage() {
               >
                 <NextImage
                   className='w-[350px] md:w-fit '
-                  src="/images/robotKapal.jpeg"
+                  src="/images/boat/robotKapal.jpeg"
                   width={502}
                   height={560}
                   alt='Logo'
@@ -129,7 +129,7 @@ export default function RobotPage() {
                 <Reveal>
                   <NextImage
                     className='md:visible grid justify-center w-[300px] md:w-[562px]'
-                    src="/images/robotKapal1.jpeg"
+                    src="/images/boat/robotKapal1.jpeg"
                     width={502}
                     height={560}
                     alt='Logo'

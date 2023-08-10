@@ -1,7 +1,6 @@
+import { Reveal } from '@/components/Reveal/Reveal';
 import * as React from 'react';
 import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai'
-
-import { Reveal } from '@/components/Reveal';
 
 export const ProfileEPR = () => {
   return (
@@ -19,7 +18,7 @@ export const ProfileEPR = () => {
       </div>
       <div>
         <Reveal>
-          <div className='flex md:flex-row flex-col justify-center align-middle mt-8'>
+          <div className='flex md:flex-row flex-col flex-wrap justify-center align-middle  mt-8'>
             {photoList.map((photo) => (
               <div key={photo.id} className="">
                 <div className="card-profile card1-profile bg-no-repeat bg-center mx-10" style={{ backgroundImage: `url(${photo.urlPhoto})` }}>

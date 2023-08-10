@@ -1,11 +1,11 @@
-import { Navbar } from '@/components/Navbar'
+import { Navbar } from '@/components/Navbar/Navbar'
 import NextImage from '@/components/NextImage'
-import { Reveal } from '@/components/Reveal'
+import { Reveal } from '@/components/Reveal/Reveal'
 import React from 'react'
 
 function LandingPage() {
   return (
-    <section className='bg-white h-screen' id='Home'>
+    <section className=' h-full' id='Home'>
       <Navbar />
       <div className='layout flex flex-col justify-center items-center my-20'>
         <Reveal>
@@ -22,7 +22,7 @@ function LandingPage() {
       </div>
       <div className='flex justify-center items-center'>
         <NextImage
-          className='cursor-pointer '
+          className='cursor-pointer w-[50%] '
           src="/images/kapal.png"
           width='930'
           height='562'

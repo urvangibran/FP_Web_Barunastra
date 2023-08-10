@@ -1,28 +1,27 @@
+import { Reveal } from '@/components/Reveal/Reveal';
 import * as React from 'react';
 import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai'
 
-import { Reveal } from '@/components/Reveal';
 
-export const ProfileMEC = () => {
+export const ProfileNTC = () => {
   return (
     <>
-      <div id='MEC' className='layout mt-24 flex flex-col justify-center items-center '>
+      <div id='NTC' className='layout mt-24 flex flex-col justify-center items-center'>
         <Reveal>
           <h5 className='my-3 text-[44px] font-[1000] gotham uppercase'>Meet</h5>
         </Reveal>
         <Reveal>
-          <h1 className='text-[50px] md:text-[64px] font-[1000] gotham leading-[70px] text-center uppercase'>The Mechanics</h1>
+          <h1 className='text-[50px] md:text-[64px] font-[1000] gotham leading-[70px] text-center uppercase'>Non-Techinal</h1>
         </Reveal>
         <Reveal>
-          <p className='text-center mt-3 gotham w-[300px] md:w-[550px]'>Our specialist are out pride. <br /> Responsible for inspecting, maintaining, and repairing boats and their engines to ensure they are running safely and efficiently.
-          </p>
+          <p className='text-center w-[300px] md:w-[550px] mt-3 gotham'>Our specialist are out pride. <br /> These people create stunning design and come up with crazy ideas.</p>
         </Reveal>
       </div>
       <div>
         <Reveal>
-          <div className='flex flex-col md:flex-row  justify-center align-middle mt-8 '> {/* w-full h-[460px] bg-gray-800 rounded-xl */}
+          <div className='flex flex-col flex-wrap md:flex-row justify-center w-full align-middle mt-16'>
             {photoList.map((photo) => (
-              <div key={photo.id} className='mt-10'>
+              <div key={photo.id} className="">
                 <div className="card-profile card1-profile bg-no-repeat bg-center mx-10" style={{ backgroundImage: `url(${photo.urlPhoto})` }}>
                   <div className="border-profile">
                     <h2>{photo.name}</h2>
@@ -48,27 +47,35 @@ export const ProfileMEC = () => {
 
 const photoList = [
   {
-    id: 4,
-    name: "Fajri",
-    subdiv: "Production",
-    ig: "fajri_romadlon",
-    departement: "Sistem Perkapalan",
-    urlPhoto: './images/team/fajri.png'
+    id: 7,
+    name: "Egi",
+    subdiv: "Sponext",
+    ig: "lefranzy",
+    departement: "Teknik Kelautan",
+    urlPhoto: './images/team/egi.png'
   },
   {
-    id: 5,
-    name: "Fian",
-    subdiv: "Design",
-    ig: "alfian.rijek",
-    departement: "Sistem Perkapalan",
-    urlPhoto: './images/team/fiyan.png'
+    id: 8,
+    name: "Al",
+    subdiv: "Sponext",
+    ig: "fathonialfadh",
+    departement: "Teknik Kelautan",
+    urlPhoto: './images/team/al.png'
   },
   {
-    id: 6,
-    name: "Faiq",
-    subdiv: "Production",
-    ig: "fajri_romadlon",
-    departement: "Sistem Perkapalan",
-    urlPhoto: './images/team/faiq.png'
+    id: 9,
+    name: "Nopal",
+    subdiv: "Sosbrand",
+    ig: "naufal_irsh",
+    departement: "Teknik Komputer",
+    urlPhoto: './images/team/nofal.png'
+  },
+  {
+    id: 10,
+    name: "Alifa",
+    subdiv: "Finad",
+    ig: "alifakhf",
+    departement: "Matematika",
+    urlPhoto: './images/team/alifa.png'
   },
 ];

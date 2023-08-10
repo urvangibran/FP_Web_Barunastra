@@ -1,15 +1,13 @@
-import { Cards } from '@/components/Cards'
-import NextImage from '@/components/NextImage'
-import { RevealX } from '@/components/RevealX'
-import { RevealXR } from '@/components/RevealXR'
+import { Cards } from '@/components/Cards/CardsAbout'
+import { RevealX } from '@/components/Reveal/RevealX'
 import ButtonLink from '@/components/links/ButtonLink'
 import React from 'react'
 
 function About() {
   return (
-    <section className='flex relative justify-center items-center h-screen' id='About'>
-      <div className='absolute w-[80%] flex flex-col-reverse md:flex-row md:justify-between'>
-        <div className='md:w-[40%]'>
+    <section className='grid grid-cols-1 md:grid-cols-2 relative justify-center items-center h-screen p-5' id='About'>
+      <div className=' flex flex-col-reverse order-last md:order-first md:flex-row md:justify-between md:ml-24'>
+        <div className='md:w-[70%]'>
           <div className='bg-primary-500 md:w-[130px] rounded-md shadow-lg shadow-slate-500'>
             <RevealX>
               <p className='gotham text-[35px] font-bold p-2 py-4 flex items-center box-border text-white '>About</p>
@@ -31,9 +29,9 @@ function About() {
             </ButtonLink>
           </RevealX>
         </div>
-        <div>
-          <Cards />
-        </div>
+      </div>
+      <div>
+        <Cards />
       </div>
     </section>
   )

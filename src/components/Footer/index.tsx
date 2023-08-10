@@ -1,11 +1,11 @@
 import React from 'react';
 
 import NextImage from '@/components/NextImage';
-import { Reveal } from '@/components/Reveal';
 import Image from 'next/image';
-import { RevealX } from '@/components/RevealX';
-import { RevealXR } from '@/components/RevealXR';
 import { Tooltip } from '@chakra-ui/react';
+import { Reveal } from '@/components/Reveal/Reveal';
+import { RevealX } from '@/components/Reveal/RevealX';
+import { RevealXR } from '@/components/Reveal/RevealXR';
 
 export const Footer: React.FC = () => {
   return (
