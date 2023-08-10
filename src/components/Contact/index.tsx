@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { Footer } from '@/components/Footer'
 import NextImage from '@/components/NextImage'
+import { Footer } from '@/components/Footer'
 
 function Contact() {
   return (
@@ -10,7 +10,7 @@ function Contact() {
         <section id='Contact' className='h-screen relative flex flex-col items-center'>
           <NextImage
             className='cursor-pointer w-auto'
-            src="/images/footerPhotos.png"
+            src="/images/logo/footerPhotos.png"
             width='1925'
             height='850'
             alt='Logo' />

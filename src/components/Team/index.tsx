@@ -38,7 +38,7 @@ function Team() {
 
                 <NextImage
                   className='cursor-pointer w-auto md:w-[219px] md:h-[220px] absolute'
-                  src="/images/epr.png"
+                  src="/images/team/epr.png"
                   width='219'
                   height='220'
                   alt='Logo' />
@@ -58,7 +58,7 @@ function Team() {
                 <Link to="MEC" spy={true} smooth={true} offset={-100} duration={500} className='z-10 font-bold text-[60px] text-transparent gotham px-5 cursor-pointer'>LINK LINK LINK LINK LNK LINK LINK LINK LINK LINK</Link>
                 <NextImage
                   className='cursor-pointer w-auto md:w-[219px] md:h-[220px] absolute '
-                  src="/images/mec.png"
+                  src="/images/team/mec.png"
                   width='219'
                   height='220'
                   alt='Logo'
@@ -79,7 +79,7 @@ function Team() {
                 <Link to="NTC" spy={true} smooth={true} offset={-100} duration={500} className='z-10 font-bold text-[60px] text-transparent gotham px-5 cursor-pointer'>LINK LINK LINK LINK LNK LINK LINK LINK LINK LINK</Link>
                 <NextImage
                   className='cursor-pointer w-auto md:w-[219px] md:h-[220px] absolute'
-                  src="/images/ntc.png"
+                  src="/images/team/ntc.png"
                   width='219'
                   height='220'
                   alt='Logo' />

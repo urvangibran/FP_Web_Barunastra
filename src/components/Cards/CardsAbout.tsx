@@ -9,7 +9,7 @@ export const Cards = () => {
         <RevealXR>
           <NextImage
             className='w-full h-auto border-[20px] rounded-lg border-[#242424] '
-            src="/images/kapalAbout.jpg"
+            src="/images/boat/kapalAbout.jpg"
             width='595'
             height='391'
             alt='Logo'

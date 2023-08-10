@@ -23,7 +23,7 @@ function LandingPage() {
       <div className='flex justify-center items-center'>
         <NextImage
           className='cursor-pointer w-[50%] '
-          src="/images/kapal.png"
+          src="/images/boat/kapal.png"
           width='930'
           height='562'
           alt='Logo'
