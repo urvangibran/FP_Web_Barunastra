@@ -11,10 +11,10 @@ export const ProfileNTC = () => {
           <h5 className='my-3 text-[44px] font-[1000] gotham uppercase'>Meet</h5>
         </Reveal>
         <Reveal>
-          <h1 className='text-[64px] font-[1000] gotham leading-[70px] text-center uppercase'>Non-Techinal</h1>
+          <h1 className='text-[50px] md:text-[64px] font-[1000] gotham leading-[70px] text-center uppercase'>Non-Techinal</h1>
         </Reveal>
         <Reveal>
-          <p className='text-center w-[550px] mt-3 gotham'>Our specialist are out pride. <br /> These people create stunning design and come up with crazy ideas.</p>
+          <p className='text-center w-[300px] md:w-[550px] mt-3 gotham'>Our specialist are out pride. <br /> These people create stunning design and come up with crazy ideas.</p>
         </Reveal>
       </div>
       <div>

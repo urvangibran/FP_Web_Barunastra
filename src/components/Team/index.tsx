@@ -20,7 +20,7 @@ function Team() {
             <h1 className='text-[64px] font-[1000] gotham leading-[70px] text-center uppercase'>The Crew</h1>
           </Reveal>
           <Reveal>
-            <p className='text-center ml-[115px] md:ml-[277px] mt-3 gotham w-[50%]'>Meet the extraordinary individuals who have come together, not just as teammates but as a family.</p>
+            <p className='text-center mt-3 gotham w-[300px] md:w-[550px]'>Meet the extraordinary individuals who have come together, not just as teammates but as a family.</p>
           </Reveal>
         </div>
         <div className='gap-10 flex flex-col md:flex-row md:gap-[300px]'>

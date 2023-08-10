@@ -11,10 +11,10 @@ export const ProfileMEC = () => {
           <h5 className='my-3 text-[44px] font-[1000] gotham uppercase'>Meet</h5>
         </Reveal>
         <Reveal>
-          <h1 className='text-[64px] font-[1000] gotham leading-[70px] text-center uppercase'>The Mechanics</h1>
+          <h1 className='text-[50px] md:text-[64px] font-[1000] gotham leading-[70px] text-center uppercase'>The Mechanics</h1>
         </Reveal>
         <Reveal>
-          <p className='text-center mt-3 gotham w-[550px]'>Our specialist are out pride. <br /> Responsible for inspecting, maintaining, and repairing boats and their engines to ensure they are running safely and efficiently.
+          <p className='text-center mt-3 gotham w-[300px] md:w-[550px]'>Our specialist are out pride. <br /> Responsible for inspecting, maintaining, and repairing boats and their engines to ensure they are running safely and efficiently.
           </p>
         </Reveal>
       </div>

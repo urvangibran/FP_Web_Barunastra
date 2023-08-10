@@ -9,6 +9,7 @@ import NextImage from '@/components/NextImage';
 import { Reveal } from '@/components/Reveal';
 import { RevealX } from '@/components/RevealX';
 import Seo from '@/components/Seo';
+import { CardSpesification } from '@/components/CardsSpesification';
 
 export default function RobotPage() {
   const [imageLoaded, setImageLoaded] = React.useState(false);
@@ -55,18 +56,18 @@ export default function RobotPage() {
               <h5 className='mt-10 mb-5 text-[20px] font-bold gotham uppercase'>Welcome to</h5>
             </Reveal>
             <Reveal>
-              <h1 className='text-[64px] mb-2 font-bold gotham leading-[70px] text-center uppercase'>Barunastra ITS</h1>
+              <h1 className='text-[40px] md:text-[64px] mb-2 font-bold gotham leading-[70px] text-center uppercase'>Barunastra ITS</h1>
             </Reveal>
             <Reveal>
-              <p className='gotham text-center ml-[116px] md:ml-[277px] w-[50%]'>Barunastra ITS Roboboat team is a research team from Sepuluh Nopember Institute of Technology ITS which focuses on developing unmaned vessels since 2012.</p>
+              <p className='gotham text-center w-[300px] md:w-[550px]'>Barunastra ITS Roboboat team is a research team from Sepuluh Nopember Institute of Technology ITS which focuses on developing unmaned vessels since 2012.</p>
             </Reveal>
           </div>
         </section>
-        <section className='layout bg-[#eaeaea] h-screen flex flex-col justify-center items-center '>
-          <div className='grid md:grid-cols-2 gap-10 h-[50%]'>
-            <div className='p-20 gotham'>
+        <section className='layout bg-[#eaeaea] h-full flex flex-col justify-center items-center '>
+          <div className='grid grid-flow-row-dense md:grid-cols-2 md:gap-10 gap-0'>
+            <div className='p-20 gotham order-last md:order-first'>
               <RevealX>
-                <h1 className='small-caps gotham text-[60px] mt-[283px] md:mt-0 mb-3 py-2 text-[#2E3FA2] '>Pasupastra</h1>
+                <h1 className='small-caps gotham text-[60px] mb-3 py-2 text-[#2E3FA2] '>Pasupastra</h1>
               </RevealX>
               <RevealX>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non maxime, ea eveniet illo laboriosam sed ratione incidunt assumenda iste vero doloribus dignissimos qui veritatis repellat, repellendus accusantium adipisci molestiae quisquam, est ipsam eaque et aspernatur? Quos eligendi rem labore ipsum ipsa temporibus commodi nemo, molestias odit. Omnis corrupti non rem.</p>
@@ -100,13 +101,13 @@ export default function RobotPage() {
                 </Link>
               </RevealX>
             </div>
-            <div className=''>
+            <div className='flex items-center justify-center w-full md:mt-0 mt-20'>
               <div
-                className={`relative ${imageLoaded ? 'fade-in' : ''}`}
+                className={`grid justify-center mr-0 md:mr-16 ${imageLoaded ? 'fade-in' : ''}`}
                 style={{ opacity: imageLoaded ? 1 : 0 }}
               >
                 <NextImage
-                  className='md:visible w-[400px] left-[55px] md:left-[-10px] top-[-820px] md:top-[90px] md:bottom-[-640px] md:w-[562px] md:h-[560px] absolute'
+                  className='w-[350px] md:w-fit '
                   src="/images/robotKapal.jpeg"
                   width={502}
                   height={560}
@@ -116,37 +117,37 @@ export default function RobotPage() {
               </div>
             </div>
           </div>
-          <div id='Anatomy' className='h-screen mt-20 flex flex-col items-center'>
+          <div id='Anatomy' className='h-full flex flex-col justify-center items-center'>
             <Reveal>
-              <h1 className='text-center gotham my-1 mb-10 mt-[230px] md:mt-0 text-[60px] text-[#2E3FA2] small-caps'>Anatomy</h1>
+              <h1 className='text-center gotham my-1 mb-10 text-[60px] text-[#2E3FA2] small-caps'>Anatomy</h1>
             </Reveal>
-            <div className='absolute bottom-[-700px] md:bottom-[-650px] left-[700px]'>
+            <div>
               <div
-                className={`relative left-[-640px] md:left-0 ${imageLoaded ? 'fade-in' : ''}`}
+                className={` ${imageLoaded ? 'fade-in' : ''}`}
                 style={{ opacity: imageLoaded ? 1 : 0 }}
               >
                 <Reveal>
-                <NextImage
-                  className='md:visible w-[400px] md:w-[562px] md:h-[560px]'
-                  src="/images/robotKapal1.jpeg"
-                  width={502}
-                  height={560}
-                  alt='Logo'
-                  style={{ borderRadius: '4%' }}
-                />
+                  <NextImage
+                    className='md:visible grid justify-center w-[300px] md:w-[562px]'
+                    src="/images/robotKapal1.jpeg"
+                    width={502}
+                    height={560}
+                    alt='Logo'
+                    style={{ borderRadius: '4%' }}
+                  />
                 </Reveal>
               </div>
             </div>
-            {/* <CardSpesification /> */}
+            <CardSpesification />
           </div>
         </section>
-        <section className='layout bg-[#eaeaea] h-[130vh] md:h-[140vh] flex flex-col items-center '>
+        <section className='layout h-full bg-[#eaeaea] flex flex-col items-center '>
           <RevealX>
-            <div className='layout w-[960px] h-[120vh] mt-[0px] flex flex-col justify-center items-center '>
-              <div className='w-[40%] md:w-[80%] h-[100vh] '>
+            <div className='layout w-screen md:w-[960px] h-[120vh] flex flex-col justify-center items-center '>
+              <div className='w-[80%] h-full '>
                 <div id='RobotInfo' className='flex justify-center '>
                   <Reveal>
-                    <h1 className='text-center mt-[130px] md:mt-0 my-1 gotham text-[60px] py-2 text-[#2E3FA2] small-caps leading-[50px] '>Robot Information</h1>
+                    <h1 className='text-center gotham text-[60px] py-2 text-[#2E3FA2] small-caps leading-[50px] '>Robot Information</h1>
                   </Reveal>
                 </div>
                 <hr
@@ -155,7 +156,7 @@ export default function RobotPage() {
                     height: '40px',
                   }}
                 />
-                <div className='grid relative h-[800px] md:h-screen auto-cols-fr gotham text-[17 px] ' style={{ gridTemplateColumns: "1fr 2fr 2fr" }}>
+                <div className='grid relative h-full md:h-screen auto-cols-fr gotham text-[17 px] ' style={{ gridTemplateColumns: "1fr 2fr 2fr" }}>
                   <div className='py-2 ml-1'>
                     <h5>CPU</h5>
                   </div>
@@ -223,7 +224,7 @@ export default function RobotPage() {
                     <p className='mb-4'>Robot Height</p>
                     <p className='mb-4'>Robot Weight</p>
                   </div>
-                  <div className='py-2'>
+                  <div className='pt-2 pb-12'>
                     <p className='mb-4'>53cm</p>
                     <p className='mb-4'>18kg</p>
                     <div className='absolute w-[100%] bg-black h-[2px] mt-[55px] left-0'></div>
@@ -232,13 +233,10 @@ export default function RobotPage() {
               </div>
             </div>
           </RevealX>
-
         </section>
-        <section>
-          <div className='absolute hidden md:block left-[108px] bottom-[-3200px] md:bottom-[-1920px] md:visible'>
-            <Footer />
-          </div>
-        </section>
+        <div className='mt-32 hidden md:block '>
+          <Footer />
+        </div>
       </main>
     </Layout >
 
