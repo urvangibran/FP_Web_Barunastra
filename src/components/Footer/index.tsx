@@ -150,7 +150,7 @@ export const Footer: React.FC = () => {
                 <div className='top-3 hover:scale-105 transition-all ease-in-out left-[100px] absolute'>
                   <NextImage
                     className='cursor-pointer md:w-[240px] md:h-[60px]'
-                    src="/images/logoits.png"
+                    src="/images/logo/logoits.png"
                     width='240'
                     height='60'
                     alt='Logo ITS' />
@@ -247,16 +247,7 @@ export const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        {/* <div className='-left-[100px] bottom-0 absolute bg-[#282828] md:w-[1922px] md:h-[192px]'></div> */}
       </div >
     </div >
   );
 }
-
-// <div className='flex flex-row gap-4  gotham text-end animated'>
-//               <div>
-//                 
-//               </div>
-//               
-//               
-//             </div>
