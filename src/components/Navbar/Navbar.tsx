@@ -22,7 +22,7 @@ export const Navbar = () => {
       <div className="flex items-center justify-center mx-9">
         <NextImage
           className='cursor-pointer z-10'
-          src='/images/logo.png'
+          src='/images/logo/logo-barunastra.png'
           width='182'
           height='38'
           alt='Logo'
