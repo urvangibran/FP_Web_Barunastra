@@ -169,7 +169,7 @@ export const Footer: React.FC = () => {
                       <div className='peer scale-75 hover:scale-100 transition-all ease-in-out'>
                         <a target='_blank' href="https:twitter.com/BarunastraITS">
                           <Image
-                            src='/images/twitter.png'
+                            src='/images/logo/twitter.png'
                             alt='twitter'
                             width={30}
                             height={60}
@@ -183,7 +183,7 @@ export const Footer: React.FC = () => {
                   <div className='flex items-center flex-row gap-2'>
                     <div className='scale-75 hover:scale-100 transition-all ease-in-out'>
                       <a target='_blank' href="https:facebook.com/Barunastra-ITS">
-                        <Image src='/images/fb.png' alt='fb' width={30} height={60} />
+                        <Image src='/images/logo/fb.png' alt='fb' width={30} height={60} />
                       </a>
                     </div>
                     <Reveal>
@@ -193,7 +193,7 @@ export const Footer: React.FC = () => {
                   <div className='flex items-center flex-row gap-2 '>
                     <div className='peer scale-75 hover:scale-100 transition-all ease-in-out'>
                       <a target='_blank' href="https:instagram.com/barunastra_its">
-                        <Image src='/images/ig.png' alt='ig' width={30} height={60} />
+                        <Image src='/images/logo/ig.png' alt='ig' width={30} height={60} />
                       </a>
                     </div>
                     <Reveal>
