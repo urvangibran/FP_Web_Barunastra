@@ -3,8 +3,8 @@ import { useRouter } from 'next/router';
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
-  siteName: 'Next.js + Tailwind CSS + TypeScript Starter',
+  title: '',
+  siteName: '',
   description:
     'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
@@ -30,7 +30,7 @@ export default function Seo(props: SeoProps) {
     ...props,
   };
   meta['title'] = props.templateTitle
-    ? `${props.templateTitle} | ${meta.siteName}`
+    ? `${props.templateTitle}${meta.siteName}`
     : meta.title;
 
   // Use siteName if there is templateTitle
@@ -73,9 +73,9 @@ export default function Seo(props: SeoProps) {
           />
           {/* // !STARTERCONF Remove or change to your name */}
           <meta
-            name='author'
-            property='article:author'
-            content='Theodorus Clarence'
+            name='Urvan Gibran'
+            property='Web Barunastra:Urvan Gibran'
+            content='Web Barunastra'
           />
         </>
       )}
@@ -103,13 +103,13 @@ const favicons: Array<React.ComponentPropsWithoutRef<'link'>> = [
     rel: 'icon',
     type: 'image/png',
     sizes: '32x32',
-    href: '/favicon/favicon-32x32.png',
+    href: '/images/boat/kapal.png ',
   },
   {
     rel: 'icon',
     type: 'image/png',
     sizes: '16x16',
-    href: '/favicon/favicon-16x16.png',
+    href: '/images/boat/kapal.png ',
   },
   { rel: 'manifest', href: '/favicon/site.webmanifest' },
   {
@@ -117,5 +117,5 @@ const favicons: Array<React.ComponentPropsWithoutRef<'link'>> = [
     href: '/favicon/safari-pinned-tab.svg',
     color: '#00e887',
   },
-  { rel: 'shortcut icon', href: '/favicon/favicon.ico' },
+  { rel: 'shortcut icon', href: '/images/boat/kapal.png ' },
 ];

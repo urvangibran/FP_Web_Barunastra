@@ -12,7 +12,7 @@ export default function HomePage() {
   return (
     <Layout>
       <Seo
-        templateTitle='Web Kelompok 4 FP Barunastra'
+        templateTitle='Barunastra Group 4'
         description='Awesome Page'
       />
 
